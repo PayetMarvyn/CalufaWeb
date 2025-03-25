@@ -7,14 +7,17 @@
     <title>Accueil | Calufa-beer.com</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li>Fabrication</li>
+                <li>L'équipe</li>
+                <li><a href="#"><img href="/images/logo_calufa.png"><a></li>
+                <li>Articles</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    <header>
 
     <main>
         <section>
@@ -27,6 +30,23 @@
 
         </section>
     </main>
+
+    <footer>
+        <div>
+            <ul>
+                <il>Contact</il>
+                <il>l'équipe</il>
+                <il>Mentions legales</il>
+            </ul>
+        <div>
+        <div>
+            <ul>
+                <il>Suivez-nous !</il>
+                <il><a href="https://www.instagram.com/calufa_beer?igsh=MWkzbm1qbzRwa2p5cQ=="><img href="/images/instagram-icon.png"></il>
+                <il><a href="https://www.youtube.com"><img href="/images/youtube-icon.png"></il>
+            </ul>
+        <div>
+    </footer>
     
 </body>
 </html>
