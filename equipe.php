@@ -9,9 +9,9 @@
 <body>
     <nav>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>One</li>
+            <li>Tracy</li>
+            <li>Neemati</li>
             <li></li>
         </ul>
     </nav>
