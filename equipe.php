@@ -9,8 +9,8 @@
 <body>
     <nav>
         <ul>
-            <li></li>
-            <li></li>
+            <li>One</li>
+            <li>Tracy</li>
             <li></li>
             <li></li>
         </ul>
