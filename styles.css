@@ -61,17 +61,19 @@ section {
     margin-bottom: 2em;
 }
 
+
+
+/*Footer et élements */
 footer {
     background: orange;
     color: #fff;
     font-family: 'Gagalin', sans-serif;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2em;
     margin-top: 2rem;
-
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 footer p {
@@ -79,13 +81,32 @@ footer p {
     font-size: 1.2em;
 }
 
-.reseaux-sociaux {
-    display: flex;
-    align-items: center;
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.apropos {
+    text-align: start;
+}
+
+.apropos p {
+    margin-bottom: 0.5em;
+}
+
+.apropos p a:hover {
+    text-underline-offset: 0.2em;
+    text-decoration: underline;
+}
+
+.reseaux-sociaux p {
+    margin-bottom: 0.5em; 
+    font-size: 2em;
 }
 
 .reseaux-sociaux img {
-    margin: 1em 0.5em 1em;
+    margin-left: 1em;
     transition: 0.2s;
 }
 
@@ -93,21 +114,7 @@ footer p {
     transform: scale(1.2);
 }
 
-.apropos {
-    display: flex;
-    align-items: center;
-}
 
-.apropos p {
-    margin: 0 1em 1em;
-    text-decoration: underline 0.2rem 2em;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.2s;
-}
 
 /*Carrousel */
 .carrousel {
@@ -153,4 +160,23 @@ button:hover {
 a {
     text-decoration: none;
     width: 100%;
+}
+
+/*Collaborations*/
+
+.collabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: rgb(116, 175, 207);
+}
+
+.collabs img {
+    width: 70%;
+    transition: 0.2s;
+}
+
+.collabs div {
+    margin: 0 0.6em;
 }
