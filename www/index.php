@@ -1,5 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
+require_once 'config.php';
+require_once 'model.php';
+$pdo = getDatabaseConnexion();
+$query = $pdo->prepare("SELECT * FROM `bieres`");
+$query->execute();
+$bieres = $query->fetchAll();
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +27,7 @@
                 <li><a href="fabrication.html">Fabrication</a></li>
                 <li>
                     <div>
-                        <a href="index.html"><img src="images/logo_calufa.png"></a>
+                        <a href="index.php"><img src="images/logo_calufa.png"></a>
                     </div>
                 </li>
                 <li><a href="histoire.html">Histoire</a></li>
@@ -33,64 +39,16 @@
 
     <main>
         <section class="carrousel">
+            <?php foreach ($bieres as $biere): ?>
+                <div class="carrousel-carte">
+                    <a href="bière.html"><img src="<?= 'images/' . $biere ['image_url'] ?>" alt="Bière 1"></a>
+                    <h2> <?= $biere ['nom'] ?> </h2>
+                    <h3>Phrase d'accroche</h3>
+                    <p><?= $biere ['description'] ?></p>
+                    <button> En savoir plus +</button>
+                </div>
+            <?php endforeach; ?>
 
-            <button> &#8249; </button>
-
-            <div class="carrousel-carte">
-                <a href="bière.html"><img src="images/test.png" alt="Bière 1"></a>
-                <h2>Piña Colada</h2>
-                <h3>Phrase d'accroche</h3>
-                <p>FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte
-                    FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte</p>
-                <button> En savoir plus +</button>
-            </div>
-
-            <div class="carrousel-carte">
-                <a href="bière.html"><img src="images/test.png" alt="Bière 2"></a>
-                <h2>Piña Colada</h2>
-                <h3>Phrase d'accroche</h3>
-                <p>FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte
-                    FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte</p>
-                <button> En savoir plus +</button>
-            </div>
-
-            <div class="carrousel-carte">
-                <a href="bière.html"><img src="images/test.png" alt="Bière 3"></a>
-                <h2>Piña Colada</h2>
-                <h3>Phrase d'accroche</h3>
-                <p>FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte
-                    FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte</p>
-                <button> En savoir plus +</button>
-            </div>
-
-            <div class="carrousel-carte">
-                <a href="bière.html"><img src="images/test.png" alt="Bière 4"></a>
-                <h2>Piña Colada</h2>
-                <h3>Phrase d'accroche</h3>
-                <p>FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte
-                    FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte</p>
-                <button> En savoir plus +</button>
-            </div>
-
-            <div class="carrousel-carte">
-                <a href="bière.html"><img src="images/test.png" alt="Bière 5"></a>
-                <h2>Piña Colada</h2>
-                <h3>Phrase d'accroche</h3>
-                <p>FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte
-                    FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte</p>
-                <button> En savoir plus +</button>
-            </div>
-
-            <div class="carrousel-carte">
-                <a href="bière.html"><img src="images/test.png" alt="Bière 6"></a>
-                <h2>Piña Colada</h2>
-                <h3>Phrase d'accroche</h3>
-                <p>FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte
-                    FauxtexteFauxtexteFauxtexteFauxtexteFauxtexteFauxtexte</p>
-                <button> En savoir plus +</button>
-            </div>
-
-            <button> &#8249; </button>
         </section>
 
         <script src="carrousel.js"></script>
@@ -166,5 +124,3 @@
         </div>
     </footer>
 </body>
-
-</html>
