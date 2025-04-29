@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: orange;
+    background: rgb(3, 89, 201);
     color: #fff;
     font-family: 'Gagalin', sans-serif;
     text-align: center;
@@ -17,6 +17,11 @@ header {
 
 header ul li img {
     width: 5em;
+}
+
+header a:hover {
+    text-decoration: underline 3px;
+    text-underline-offset: 0.1em;
 }
 
 nav ul {
@@ -65,7 +70,7 @@ section {
 
 /*Footer et élements */
 footer {
-    background: orange;
+    background: rgb(255, 68, 0);
     color: #fff;
     font-family: 'Gagalin', sans-serif;
     text-align: center;
