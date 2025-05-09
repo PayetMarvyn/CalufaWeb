@@ -48,7 +48,6 @@ $bieres = $query->fetchAll();
                     <button> En savoir plus +</button>
                 </div>
             <?php endforeach; ?>
-
         </section>
 
         <script src="carrousel.js"></script>
@@ -118,9 +117,9 @@ $bieres = $query->fetchAll();
 
         <div class="reseaux-sociaux">
             <p>Suivez nous !</p>
-            <a href="#"><img src="images/youtube.svg"></a>
-            <a href="#"><img src="images/insta.svg"></a>
-            <a href="#"><img src="images/tiktok.svg"></a>
+            <a href="https://www.youtube.com/@CalufaBeer"><img src="images/youtube.svg"></a>
+            <a href="https://www.instagram.com/calufa_beer/"><img src="images/insta.svg"></a>
+            <a href="https://www.tiktok.com/@calufa_beer"><img src="images/tiktok.svg"></a>
         </div>
     </footer>
 </body>
