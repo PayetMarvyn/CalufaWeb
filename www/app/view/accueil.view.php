@@ -13,7 +13,6 @@
 
     <script src="../../../public/js/carrousel.js"></script>
 
-
     <section class="accueil">
         <h1>QUE CALUFA !</h1>
         <h2>Phrase d'accroche</h2>
@@ -45,7 +44,7 @@
 
         <h1>Nous collaborons avec</h1>
         <div class="collabs">
-            <div><img src="images/partenaire1.png" alt="Draskan"></div>
+            <div><img src="../../../public/images/partenaire1.png" alt="Draskan"></div>
         </div>
     </section>
 </main>

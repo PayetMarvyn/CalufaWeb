@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALUFA.com</title>
+    <link rel="icon" type="image/png" href="../../../public/images/logo_calufa.png">
     <link rel="stylesheet" href="../../../public/css/styles.css">
     <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,16 +18,16 @@
     <header>
         <nav>
             <ul>
-                <li><a href="catalogue.html">Nos bières</a></li>
-                <li><a href="fabrication.html">Fabrication</a></li>
+                <li><a href="../../../catalogue.php">Nos bières</a></li>
+                <li><a href="../../../fabrication.php">Fabrication</a></li>
                 <li>
                     <div>
-                        <a href="index.php"><img src="images/logo_calufa.png"></a>
+                        <a href="../../../index.php"><img src="../../../public/images/logo_calufa.png"></a>
                     </div>
                 </li>
-                <li><a href="histoire.html">Histoire</a></li>
-                <li><a href="equipe.html">Équipe</a></li>
-                <li><img src="images/shoppingcart.svg" style="width: 1em;"></li>
+                <li><a href="../../../histoire.php">Histoire</a></li>
+                <li><a href="../../../biere.php">Équipe</a></li>
+                <li><img src="../../../public/images/shoppingcart.svg" style="width: 1em;"></li>
             </ul>
         </nav>
     </header>
