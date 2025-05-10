@@ -1,0 +1,187 @@
+/*Base CSS site web CALUFA */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: normal;
+}
+
+header {
+    background: rgb(3, 89, 201);
+    color: #fff;
+    font-family: 'Gagalin', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em 0;
+}
+
+header ul li img {
+    width: 5em;
+}
+
+header a:hover {
+    text-decoration: underline 3px;
+    text-underline-offset: 0.1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.6em;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #ffe9bf;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: normal;
+    font-family: 'Gagalin', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: normal;
+    font-family: 'Gagalin', sans-serif;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+
+
+/*Footer et élements */
+footer {
+    background: rgb(255, 68, 0);
+    color: #fff;
+    font-family: 'Gagalin', sans-serif;
+    text-align: center;
+    padding: 2em;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.apropos {
+    text-align: start;
+}
+
+.apropos p {
+    margin-bottom: 0.5em;
+}
+
+.apropos p a:hover {
+    text-underline-offset: 0.2em;
+    text-decoration: underline;
+}
+
+.reseaux-sociaux p {
+    margin-bottom: 0.5em; 
+    font-size: 2em;
+}
+
+.reseaux-sociaux img {
+    margin-left: 1em;
+    transition: 0.2s;
+}
+
+.reseaux-sociaux img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/*Carrousel */
+.carrousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel img {
+    width: 100%;
+}
+.carrousel-carte {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 1%;
+}
+
+button {
+    background-color: #ffe9bf;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    padding: 1em;
+    font-size: 1em;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: bold;
+    color: red;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffcc80;
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+/*Collaborations*/
+
+.collabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: rgb(116, 175, 207);
+}
+
+.collabs img {
+    width: 70%;
+    transition: 0.2s;
+}
+
+.collabs div {
+    margin: 0 0.6em;
+}
