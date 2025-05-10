@@ -26,7 +26,7 @@
                     </div>
                 </li>
                 <li><a href="../../../histoire.php">Histoire</a></li>
-                <li><a href="../../../biere.php">Équipe</a></li>
+                <li><a href="../../../equipe.php">Équipe</a></li>
                 <li><img src="../../../public/images/shoppingcart.svg" style="width: 1em;"></li>
             </ul>
         </nav>

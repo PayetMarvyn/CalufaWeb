@@ -8,11 +8,9 @@ require_once 'app/controller/controller.php';
  * @return void
  */
 function generateHomePage() {
-
     $data = [
-        'page_title' => "CalufaWeb - Accueil",
-        'page_description' => "Bienvenue sur le site de Calufa, lieu des biéres les plus fraîches et coulantes !",
-        'view' => 'app/view/accueil.view.php',
+        'page_title' => "CalufaWeb - L'équipe",
+        'view' => 'app/view/equipe.view.php',
         'layout' => 'app/view/common/layout.php',
     ];
 
