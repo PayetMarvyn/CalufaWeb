@@ -3,14 +3,14 @@
 require_once 'app/controller/controller.php';
 
 /**
- * controller en charge de la génération de la page fabrication
+ * controller en charge de la génération de la page contact
  *
  * @return void
  */
 function generateHomePage() {
     $data = [
-        'page_title' => "CalufaWeb - Fabrication",
-        'view' => 'app/view/fabrication.view.php',
+        'page_title' => "CalufaWeb - Contact",
+        'view' => 'app/view/common/pagesfooter/contact.view.php',
         'layout' => 'app/view/common/layout.php',
     ];
 

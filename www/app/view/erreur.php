@@ -27,7 +27,7 @@ unset($_SESSION['flash']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <title>CalufaWeb - Erreur</title>
+    <title>CALUFA.com - Oups ! Erreur</title>
   </head>
   <body>
     <header>
@@ -44,7 +44,7 @@ unset($_SESSION['flash']);
       </nav>
     </header>
     <main class="trombi">
-      <h1>OUPS !! Il y a une erreur !</h1>
+      <h1>Oups ! Il y a une erreur !</h1>
       <div class="line-decoration" aria-hidden="true">
         <div class="line" id="line1"></div>
         <div class="line" id="line2"></div>
@@ -52,7 +52,8 @@ unset($_SESSION['flash']);
       <div class="trombi-decoration" aria-hidden="true">
       </div>
       <div class="erreur">
-        <p>La connexion à la base de données à échouer.</p>
+        <p>La connexion à la base de données a échoué.<br>
+      retrouvez Jorge et Calufa dans la page principal !</p>
       </div>
     </main>
   </body>

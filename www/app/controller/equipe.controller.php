@@ -3,7 +3,7 @@
 require_once 'app/controller/controller.php';
 
 /**
- * controller en charge de la génération de la page d'accueil
+ * controller en charge de la génération de la page equipe
  *
  * @return void
  */
