@@ -14,7 +14,7 @@
 
         <div>
             <img style="width: 20%; margin-bottom: 1em;" src="../../../public/images/logo_calufa.png" alt="Logo CALUFA">
-            <p style="margin-bottom: 1em;">&copy; 2025 CALUFA. Tous droits réservés.</p>
+            <p style="margin-bottom: 1em;">&copy; 2025 CALUFA - Tous droits réservés.</p>
             <p><span style="font-family:sans-serif ; font-size: 0.8em">Attention, l'abus d'alcool est dangereux pour la santé.<br>
                     À consommer avec modération.</span>
             </p>
