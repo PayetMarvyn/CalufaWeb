@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$message = $_SESSION['flash'] ?? "Une erreur est survenue.";
-unset($_SESSION['flash']);
+$message = $_SESSION['error'] ?? "Une erreur est survenue.";
+unset($_SESSION['error']);
 
 ?>
 
@@ -10,10 +10,10 @@ unset($_SESSION['flash']);
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Erreur</title>
+    <title>CALUFA.COM - Oups ! Erreur</title>
 </head>
 <body>
-    <h1>Oups !! Il y a une erreur !</h1>
+    <h1>Oups ! Il y a eu un erreur !</h1>
     <p><?= htmlspecialchars($message) ?></p>
     <a href="index.php">Retour à l'accueil</a>
 </body>
