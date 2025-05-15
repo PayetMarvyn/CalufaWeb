@@ -24,7 +24,7 @@
 
     <section>
         <h2>4. Protection des données personnelles</h2>
-        <p>Conformément au <strong>RGPD</strong>, les données personnelles collectées sont utilisées uniquement dans le cadre des services proposés. Vous pouvez exercer vos droits en nous contactant à <a href="mailto:[email]">[email]</a>.</p>
+        <p>Conformément au <strong>RGPD</strong>, les données personnelles collectées sont utilisées uniquement dans le cadre des services proposés. Vous pouvez exercer vos droits en nous contactant à <a href="mailto:calufa.beer@gmail.com">calufa.beer@gmail.com</a>.</p>
     </section>
 
     <section>
