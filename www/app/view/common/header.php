@@ -18,7 +18,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../../../index.php?route=biere">Nos bières</a></li>
+                <li><a href="../../../index.php?route=catalogue">Nos bières</a></li>
                 <li><a href="../../../index.php?route=fabrication">Fabrication</a></li>
                 <li>
                     <div>
