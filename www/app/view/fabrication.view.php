@@ -9,6 +9,19 @@
         </p>
     </section>
 
-    <h2>Le maltage</h2>
+    <h2>Les étapes de fabrications</h2>
+    <section id="Etape">
+
+        <div class="etape">
+
+
+            <h3>Le maltage</h3>
+            <figure>
+                <p>Cette étape est cruciale dans la fabrication d'une bière. Il consiste à faire germer les grains d'orge pour activer les enzymes nécessaires à la transformation de l'amidon en sucres fermentescibles.</p>
+            </figure>
+
+        </div>
+
+</section>
     
 </main>
