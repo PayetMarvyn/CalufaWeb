@@ -7,7 +7,7 @@ require_once 'app/controller/controller.php';
  *
  * @return void
  */
-function generateHomePage() {
+function generateHistoirePage() {
     $data = [
         'page_title' => "CalufaWeb - Histoire",
         'view' => 'app/view/histoire.view.php',

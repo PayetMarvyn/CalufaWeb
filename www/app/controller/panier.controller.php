@@ -7,10 +7,10 @@ require_once 'app/controller/controller.php';
  *
  * @return void
  */
-function generateCataloguePage() {
+function generatePanierPage() {
     $data = [
-        'page_title' => "CalufaWeb - Nos bières",
-        'view' => 'app/view/catalogue.view.php',
+        'page_title' => "CalufaWeb - Panier",
+        'view' => 'app/view/panier.view.php',
         'layout' => 'app/view/common/layout.php',
     ];
 

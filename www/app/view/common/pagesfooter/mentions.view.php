@@ -13,7 +13,7 @@
     <section>
         <h2>2. Hébergement</h2>
         <p>Le site est hébergé par <strong>L'upec</strong>, situé à <strong>IUT Sénart-Fontainebleau 77550 Moissy-Cramayel Lieusaint</strong>.</p>
-        <p>Téléphone : [Numéro]</p>
+        <p>Téléphone : +33 9 87 65 43 21</p>
         <p>Site web : <a href="mailto:calufa.beer@gmail.com">calufa.beer@gmail.com</a></p>
     </section>
 

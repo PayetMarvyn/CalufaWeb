@@ -1,5 +1,5 @@
 <main>
     <section>
-        <h1>Notre Catalogue</h1>
+        Page du panier
     </section>
 </main>

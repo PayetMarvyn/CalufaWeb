@@ -7,7 +7,7 @@ require_once 'app/controller/controller.php';
  *
  * @return void
  */
-function generateHomePage() {
+function generateEquipePage() {
     $data = [
         'page_title' => "CalufaWeb - L'équipe",
         'view' => 'app/view/equipe.view.php',

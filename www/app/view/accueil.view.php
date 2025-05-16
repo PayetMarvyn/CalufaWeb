@@ -9,7 +9,7 @@ $bieres = $query->fetchAll();
     <section class="carrousel">
         <?php foreach ($bieres as $biere): ?>
             <div class="carrousel-carte">
-                <a href="bière.html"><img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>" ></a>
+                <a href="etudiant.php?id=<?= $student['id'] ?>"><img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>" ></a>
                 <h2> <?= $biere['nom'] ?> </h2>
                 <h3>Phrase d'accroche</h3>
                 <p><?= $biere['description'] ?></p>
@@ -38,7 +38,7 @@ $bieres = $query->fetchAll();
     </section>
 
     <section class="pub">
-        <h1>Notre premiér lancement !</h1>
+        <h1>Notre premier lancement !</h1>
         <h2>Phrase d'accroche</h2>
         </p>la video est seulement un test</p>
         <iframe width="760" height="415" src="https://www.youtube.com/embed/wloQQptLYeE?si=s1p3EOGIQH1Plhnn"
