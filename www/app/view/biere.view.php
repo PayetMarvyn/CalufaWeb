@@ -1,12 +1,3 @@
-<?php
-$pdo = getDatabaseConnexion();
-$query = $pdo->prepare("SELECT * FROM `bieres`");
-$query->execute();
-$bieres = $query->fetchAll();
-
-
-
-?>
 
 <main class="biere">
             <section class="produit">

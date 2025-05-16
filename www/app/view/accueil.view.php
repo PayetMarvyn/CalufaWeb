@@ -1,10 +1,3 @@
-<?php
-$pdo = getDatabaseConnexion();
-$query = $pdo->prepare("SELECT * FROM `bieres`");
-$query->execute();
-$bieres = $query->fetchAll();
-?>
-
 <main>
     <section class="carrousel">
         <?php foreach ($bieres as $biere): ?>
