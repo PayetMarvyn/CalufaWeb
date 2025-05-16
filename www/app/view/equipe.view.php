@@ -1,8 +1,8 @@
 <main>
     <section>
-        <h1>Trombinoscopes</h1>
+        <h1>Nous sommes</h1>
 
-        <h2>Équipe MMI</h2>
+        <h2>Équipe Développement de la marque (MMI)</h2>
         <section class=trombinoscope>
             <?php foreach ($equipe as $membre): ?>
                 <?php if ($membre['id_personne'] == 6): ?>
@@ -11,20 +11,28 @@
                 <div class="carte">
                     <img src="<?= '../../../public/images/' . $membre['image_url'] ?>" alt="Membre <?= $membre['id_personne'] ?>">
                     <p><?= $membre['prenom'] ?> <?= $membre['nom'] ?></p>
+                    <p><?= $membre['equipe_type'] ?></p>
                     <p><?= $membre['description'] ?></p>
                 </div>
             <?php endforeach; ?>
+        </section>
 
-            <h2>Équipe GB</h2>
+            <h2>Équipe Génie Biologique</h2>
 
-            <?php foreach ($equipes as $membre): ?>
+        <section class=trombinoscope>
+            
+
+            <?php foreach ($equipe as $membre): ?>
+                <?php if ($membre['id_personne'] < 6) continue; ?>
                 <div class="carte">
-                    <img src="<?= '../../../public/images/' . $membre['image_url'] ?>" alt="Membre <?= $biere['id_personne'] ?>"></a>
+                    <img src="<?= '../../../public/images/' . $membre['image_url'] ?>" alt="Membre <?= $membre['id_personne'] ?>">
                     <p><?= $membre['prenom'] ?> <?= $membre['nom'] ?></p>
-                    <p><?= $biere['description'] ?></p>
+                    <p><?= $membre['equipe_type'] ?></p>
+                    <p><?= $membre['description'] ?></p>
                 </div>
             <?php endforeach; ?>
         <section>
-                <script src="../../public/js/fonctionalites.js"></script>
+
+            <script src="../../public/js/fonctionalites.js"></script>
     </section>
 </main>

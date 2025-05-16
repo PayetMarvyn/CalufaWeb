@@ -13,6 +13,7 @@ header {
     text-align: center;
     font-size: 2em;
     padding: 1em 0;
+    margin-bottom: 1em;
 }
 
 header ul li img {
@@ -58,7 +59,7 @@ h2 {
 }
 
 main {
-    padding: 3em;
+    padding: 0em 3em 0em 3em;
     text-align: center;
 }
 
@@ -75,7 +76,7 @@ footer {
     font-family: 'Gagalin', sans-serif;
     text-align: center;
     padding: 2em;
-    margin-top: 2rem;
+    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: space-around;
