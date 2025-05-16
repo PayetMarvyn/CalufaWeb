@@ -8,6 +8,7 @@ require_once 'app/controller/controller.php';
  * @return void
  */
 function generateHomePage() {
+
     $data = [
         'page_title' => "CalufaWeb - Bière",
         'view' => 'app/view/biere.view.php',
@@ -16,3 +17,4 @@ function generateHomePage() {
 
     generatePage($data);
 }
+

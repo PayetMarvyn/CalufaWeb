@@ -1,3 +1,13 @@
+<?php
+$pdo = getDatabaseConnexion();
+$query = $pdo->prepare("SELECT * FROM `bieres`");
+$query->execute();
+$bieres = $query->fetchAll();
+
+
+
+?>
+
 <main class="biere">
             <section class="produit">
                 <figure class="img_biere">
@@ -5,7 +15,7 @@
                     if (empty ($biere['photo'])) {
                         $photo = 'defaut.png';
                     } else {
-                        $photo = $biere['photo'];
+                        $photo = $biere['image_url'];
                     }?>
                     <img src="public/images/<?= $photo?>" alt="Image de la bière">
                 </figure>
