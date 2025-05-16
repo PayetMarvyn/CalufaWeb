@@ -59,6 +59,11 @@ switch ($route) {
         generateContactPage();
         break;
 
+    case 'panier':
+        require_once('app/controller/panier.controller.php');
+        generatePanierPage();
+        break;
+
     default:
         exit;
 }
