@@ -7,7 +7,7 @@ require_once 'app/controller/controller.php';
  *
  * @return void
  */
-function generateHomePage(){
+function generateMentionsPage(){
     $data = [
         'page_title' => "CalufaWeb - Mentions légales",
         'view' => 'app/view/common/pagesfooter/mentions.view.php',
