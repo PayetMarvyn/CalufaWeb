@@ -3,41 +3,28 @@
         <h1>Trombinoscopes</h1>
 
         <h2>Équipe MMI</h2>
+        <section class=trombinoscope>
+            <?php foreach ($equipe as $membre): ?>
+                <?php if ($membre['id_personne'] == 6): ?>
+                    <?php break; ?>
+                <?php endif; ?>
+                <div class="carte">
+                    <img src="<?= '../../../public/images/' . $membre['image_url'] ?>" alt="Membre <?= $membre['id_personne'] ?>">
+                    <p><?= $membre['prenom'] ?> <?= $membre['nom'] ?></p>
+                    <p><?= $membre['description'] ?></p>
+                </div>
+            <?php endforeach; ?>
 
-        <?php foreach ($membres as $membre): ?>
-            <div class='carte'>
-                <img src="$membre['photo'] . "' alt='Photo de " . $row['prenom'] . "'>
-                <h2> <?= $biere['nom'] ?> </h2>
-                <h3>Phrase d'accroche</h3>
-                <p><?= $biere['description'] ?></p>
-                <button> En savoir plus +</button>
-            </div>
-        <?php endforeach; ?>
+            <h2>Équipe GB</h2>
 
-        
-        <div class="trombinoscope">
-            <?php
-                echo "<div class='carte'>";
-                echo "<img src='" . $row['photo'] . "' alt='Photo de " . $row['prenom'] . "'>";
-                echo "<p>" . $row['prenom'] . " " . $row['nom'] . "</p>";
-                echo "</div>";
-            }
-            ?>
-        </div>
-
-        <h2>Équipe GB</h2>
-        <div class="trombinoscope" id="gb">
-            <?php
-            $result = mysqli_query($equipe, "SELECT * FROM equipe WHERE equipe_type='GB'");
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo "<div class='carte'>";
-                echo "<img src='" . $row['photo'] . "' alt='Photo de " . $row['prenom'] . "'>";
-                echo "<p>" . $row['prenom'] . " " . $row['nom'] . "</p>";
-                echo "</div>";
-            }
-            ?>
-        </div>
-
-        <script src="../../public/js/fonctionalites.js"></script>
+            <?php foreach ($equipes as $membre): ?>
+                <div class="carte">
+                    <img src="<?= '../../../public/images/' . $membre['image_url'] ?>" alt="Membre <?= $biere['id_personne'] ?>"></a>
+                    <p><?= $membre['prenom'] ?> <?= $membre['nom'] ?></p>
+                    <p><?= $biere['description'] ?></p>
+                </div>
+            <?php endforeach; ?>
+        <section>
+                <script src="../../public/js/fonctionalites.js"></script>
     </section>
 </main>

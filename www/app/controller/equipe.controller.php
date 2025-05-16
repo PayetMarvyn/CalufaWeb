@@ -8,7 +8,7 @@ require_once 'app/model/equipe.model.php';
  */
 function generateEquipePage() {
     $data = [
-        'bieres' => getAllMembers(),
+        'equipe' => getAllMembers(),
         'page_title' => "CalufaWeb - L'equipe",
         'view' => 'app/view/equipe.view.php',
         'layout' => 'app/view/common/layout.php',
