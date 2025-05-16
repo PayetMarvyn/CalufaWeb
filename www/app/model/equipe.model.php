@@ -10,7 +10,7 @@
 
 function getAllMembers () {
     $pdo = getDatabaseConnexion() ;
-    $sql = "SELECT * FROM membres";
+    $sql = "SELECT * FROM equipe";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll();

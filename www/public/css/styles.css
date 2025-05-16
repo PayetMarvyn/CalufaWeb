@@ -191,3 +191,31 @@ a {
 .mentions {
     margin: 0 10em 0 10em;
 }
+
+/*Trombinoscope */
+
+.trombinoscope {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.carte {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.carte img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.carte p {
+    margin-top: 10px;
+    font-weight: bold;
+}
