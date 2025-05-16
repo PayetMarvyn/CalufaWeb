@@ -18,16 +18,16 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../../../catalogue.php">Nos bières</a></li>
-                <li><a href="../../../fabrication.php">Fabrication</a></li>
+                <li><a href="../../../index.php?route=biere">Nos bières</a></li>
+                <li><a href="../../../index.php?route=fabrication">Fabrication</a></li>
                 <li>
                     <div>
-                        <a href="../../../index.php"><img src="../../../public/images/logo_calufa.png"></a>
+                        <a href="../../../index.php?route=accueil"><img src="../../../public/images/logo_calufa.png"></a>
                     </div>
                 </li>
-                <li><a href="../../../histoire.php">Histoire</a></li>
-                <li><a href="../../../equipe.php">Équipe</a></li>
-                <li><img src="../../../public/images/shoppingcart.svg" style="width: 1em;"></li>
+                <li><a href="../../../index.php?route=histoire">Histoire</a></li>
+                <li><a href="../../../index.php?route=equipe">Équipe</a></li>
+                <li><a href="../../../index.php?route=panier"><img src="../../../public/images/shoppingcart.svg" style="width: 1em;"></a></li>
             </ul>
         </nav>
     </header>

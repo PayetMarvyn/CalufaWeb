@@ -7,7 +7,7 @@ require_once 'app/controller/controller.php';
  *
  * @return void
  */
-function generateHomePage() {
+function generateFabricationPage() {
     $data = [
         'page_title' => "CalufaWeb - Fabrication",
         'view' => 'app/view/fabrication.view.php',

@@ -7,7 +7,7 @@ require_once 'app/controller/controller.php';
  * 
  * @return void
  */
-function generateHomePage() {
+function generateFaqPage() {
     $data = [
         'page_title' => "CalufaWeb - FAQ",
         'view' => 'app/view/common/pagesfooter/faq.view.php',

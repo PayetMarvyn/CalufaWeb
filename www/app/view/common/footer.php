@@ -6,9 +6,9 @@
                     href="https://docs.google.com/forms/d/e/1FAIpQLSePbi0Q9iKydc_gYNCUrdoqjOQtKMYrxFsCVH8rt7oD6IwjiA/viewform">Donnez-nous
                     votre avis</a>
             <p>
-            <p><a href="../../../mentions.php">Mentions légales</a></p>
-            <p><a href="../../../contact.php">Nous contacter</a></p>
-            <p><a href="../../../faq.php">FAQ</a></p>
+            <p><a href="../../../index.php?route=mentions">Mentions légales</a></p>
+            <p><a href="../../../index.php?route=contact">Nous contacter</a></p>
+            <p><a href="../../../index.php?route=faq">FAQ</a></p>
             </p>
         </div>
 

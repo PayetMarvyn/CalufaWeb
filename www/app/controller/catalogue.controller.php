@@ -7,7 +7,7 @@ require_once 'app/controller/controller.php';
  *
  * @return void
  */
-function generateHomePage() {
+function generateCataloguePage() {
     $data = [
         'page_title' => "CalufaWeb - Nos bières",
         'view' => 'app/view/catalogue.view.php',
