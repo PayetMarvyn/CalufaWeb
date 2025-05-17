@@ -107,7 +107,7 @@ footer a {
 }
 
 .reseaux-sociaux p {
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.5em;
     font-size: 2em;
 }
 
@@ -133,6 +133,7 @@ footer a {
 .carrousel img {
     width: 100%;
 }
+
 .carrousel-carte {
     padding: 1em;
     display: flex;
@@ -141,6 +142,14 @@ footer a {
     align-items: center;
     width: 25%;
     margin: 1%;
+}
+
+.carrousel-carte h2 {
+    margin-bottom: 0;
+}
+
+.carrousel-carte p {
+    margin: 1em 0 2em 0
 }
 
 button {
@@ -192,6 +201,7 @@ a {
 .pagefooter {
     margin: 0 7em 0 7em;
 }
+
 .pagefooter section {
     text-align: left;
 }
@@ -212,7 +222,8 @@ a {
     margin-top: 10px;
 }
 
-.form-contact input, .form-contact textarea {
+.form-contact input,
+.form-contact textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -263,7 +274,7 @@ a {
     padding: 15px;
     border-radius: 10px;
     width: 150px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .carte img {
@@ -274,4 +285,29 @@ a {
 .carte p {
     margin-top: 10px;
     font-weight: bold;
+}
+
+/*Page verification d'âge */
+.hero {
+    background: url('images/plage-chaleur.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    max-width: 700px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 1rem;
 }

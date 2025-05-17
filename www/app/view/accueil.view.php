@@ -4,7 +4,6 @@
             <div class="carrousel-carte">
                 <a href="biere.view.php?route=<?= $biere['id'] ?>"><img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>" ></a>
                 <h2> <?= $biere['nom'] ?> </h2>
-                <h3>Phrase d'accroche</h3>
                 <p><?= $biere['description'] ?></p>
                 <button> En savoir plus +</button>
             </div>

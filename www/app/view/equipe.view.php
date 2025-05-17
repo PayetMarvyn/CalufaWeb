@@ -32,7 +32,4 @@
                 </div>
             <?php endforeach; ?>
         <section>
-
-            <script src="../../public/js/fonctionalites.js"></script>
-    </section>
 </main>
