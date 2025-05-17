@@ -175,6 +175,88 @@ button:hover {
     transition: 0.3s;
 }
 
+/*Carrousel */
+/* Section du carrousel */
+.carrousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f7f3ed; /* Couleur douce de fond */
+}
+
+/* Carte individuelle */
+.carrousel-carte {
+    background-color: #fff9f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 300px;
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carrousel-carte:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image de la bière */
+.carrousel-carte img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Titre de la bière */
+.carrousel-carte h2 {
+    font-size: 1.4rem;
+    color: #b32e00;
+    margin: 0.5rem 0 0.25rem;
+    text-align: center;
+}
+
+/* Description */
+.carrousel-carte p {
+    font-size: 0.95rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+/* Bouton */
+.carrousel-carte button {
+    background-color: #ffe9bf;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: bold;
+    color: #b32e00;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.carrousel-carte button:hover {
+    background-color: #ffcc80;
+    transform: scale(1.05);
+}
+
+/* Lien sans soulignement */
+.carrousel-carte a {
+    text-decoration: none;
+}
+
+
 
 /*Collaborations*/
 

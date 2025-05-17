@@ -69,5 +69,7 @@ switch ($route) {
         break;
 
     default:
+        require_once('app/controller/accueil.controller.php');
+        generateHomePage();
         exit;
 }

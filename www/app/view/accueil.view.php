@@ -1,8 +1,8 @@
 
 <main> 
-    <section class="catalogue">
+    <section class="carrousel">
         <?php foreach ($bieres as $biere): ?>
-            <div class="catalogue-carte">
+            <div class="carrousel-carte">
                 <a href="index.php?route=biere&id=<?= $biere['id_biere']?>"><img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>"></a>
                 <h2> <?= $biere['nom'] ?> </h2>
                 <p><?= $biere['description'] ?></p>

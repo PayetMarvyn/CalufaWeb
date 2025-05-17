@@ -4,7 +4,7 @@
 
         <section>
             <h2>1. Éditeur du site</h2>
-            <p>Le site <strong>Calufa</strong> (accessible à l’adresse <a href="../../index.php?route=accueil">www.calufa.com</a>) est édité par <strong>CALUFA SAS</strong>, société par actions simplifiée au capital de <strong>14 779 euros</strong>, immatriculée au <strong>RCS de Moissy-Cramayel sous le numéro 54937</strong>.</p>
+            <p>Le site <strong>Calufa</strong> (accessible à l’adresse <a href="../../index.php?route=accueil">www.calufa.com</a> est édité par <strong>CALUFA SAS</strong>, société par actions simplifiée au capital de <strong>14 779 euros</strong>, immatriculée au <strong>RCS de Moissy-Cramayel sous le numéro 54937</strong>.</p>
             <p>Siège social : Rue de la Motte, 77550 Moissy-Cramayel</p>
             <p>Email : <a href="mailto:calufa.beer@gmail.com">calufa.beer@gmail.com</a></p>
             <p>Téléphone : +33 1 23 45 67 89</p>
