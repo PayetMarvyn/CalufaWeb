@@ -21,4 +21,3 @@ function generateBierePage() {
 
     generatePage($data);
 }
-

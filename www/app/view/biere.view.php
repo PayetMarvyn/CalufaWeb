@@ -2,13 +2,7 @@
 <main class="biere">
             <section class="produit">
                 <figure class="img_biere">
-                    <?php
-                    if (empty ($biere['photo'])) {
-                        $photo = 'defaut.png';
-                    } else {
-                        $photo = $biere['image_url'];
-                    }?>
-                    <img src="public/images/<?= $photo?>" alt="Image de la bière">
+                    <img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>">
                 </figure>
                 <div class="infos_biere">
                     <h2 class="nom_biere"><?= $biere['nom']?></h2>

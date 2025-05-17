@@ -42,6 +42,11 @@ nav ul li a {
     transition: 0.2s;
 }
 
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
 a:hover {
     color: #ffe9bf;
 }
@@ -120,21 +125,19 @@ footer a {
     transform: scale(1.2);
 }
 
-
-
-/*Carrousel */
-.carrousel {
+/*Catalogue Nos bieres */
+.catalogue {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.carrousel img {
+.catalogue img {
     width: 100%;
 }
 
-.carrousel-carte {
+.catalogue-carte {
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -144,12 +147,12 @@ footer a {
     margin: 1%;
 }
 
-.carrousel-carte h2 {
+.catalogue-carte h2 {
     margin-bottom: 0;
 }
 
-.carrousel-carte p {
-    margin: 1em 0 2em 0
+.catalogue-carte p {
+    margin: 1em 0 2em 0;
 }
 
 button {
@@ -172,10 +175,6 @@ button:hover {
     transition: 0.3s;
 }
 
-a {
-    text-decoration: none;
-    width: 100%;
-}
 
 /*Collaborations*/
 

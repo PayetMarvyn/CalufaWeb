@@ -1,16 +1,15 @@
-<main>
-    <section class="carrousel">
+
+<main> 
+    <section class="catalogue">
         <?php foreach ($bieres as $biere): ?>
-            <div class="carrousel-carte">
-                <a href="biere.view.php?route=<?= $biere['id'] ?>"><img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>" ></a>
+            <div class="catalogue-carte">
+                <a href="index.php?route=biere&id=<?= $biere['id_biere']?>"><img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>"></a>
                 <h2> <?= $biere['nom'] ?> </h2>
                 <p><?= $biere['description'] ?></p>
-                <button> En savoir plus +</button>
+                <a href="index.php?route=biere&id=<?= $biere['id_biere'] ?>"><button> En savoir plus +</button></a>
             </div>
         <?php endforeach; ?>
     </section>
-
-    <script src="../../../public/js/carrousel.js"></script>
 
     <section class="accueil">
         <h1>QUE CALUFA !</h1>
