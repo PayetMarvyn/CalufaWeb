@@ -22,6 +22,6 @@ function getAllBieres () {
     $sql = "SELECT * FROM bieres WHERE id=:id_biere";
     $stmt = $pdo->prepare("$sql") ;
     $stmt->bindParam(':id_biere', $id, PDO::PARAM_INT);
-    $stmt->execute() ;
+    //$stmt->execute() ;
     return $stmt->fetch();
 }

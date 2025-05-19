@@ -3,7 +3,7 @@
             <section class="produit">
                 <figure class="img_biere">
                     <?php
-                    if (empty ($biere['photo'])) {
+                    if (empty ($biere['image_url'])) {
                         $photo = 'defaut.png';
                     } else {
                         $photo = $biere['image_url'];
