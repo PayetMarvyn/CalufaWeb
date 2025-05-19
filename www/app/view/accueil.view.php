@@ -1,18 +1,30 @@
-<main>
-    <section class="carrousel">
-        <?php foreach ($bieres as $biere): ?>
-            <div class="carrousel-carte">
-                <a href="etudiant.php?id=<?= $student['id'] ?>"><img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>" ></a>
-                <h2> <?= $biere['nom'] ?> </h2>
-                <h3>Phrase d'accroche</h3>
-                <p><?= $biere['description'] ?></p>
-                <button> En savoir plus +</button>
+<section class="carrousel">
+    <button id="prevBtn" class="carrousel-btn gauche">&#8592;</button>
+
+    <?php foreach ($bieres as $index => $biere): ?>
+        <div class="carrousel-carte" data-index="<?= $index ?>">
+            <div class="carrousel-contenu">
+                <div class="carrousel-image">
+                    <a href="index.php?route=biere&id=<?= $biere['id_biere'] ?>">
+                        <img src="<?= '../../../public/images/' . $biere['imagepng_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>">
+                    </a>
+                </div>
+                <div class="carrousel-texte">
+                    <h2><?= $biere['nom'] ?></h2>
+                    <p><?= $biere['description'] ?></p>
+                    <a href="index.php?route=biere&id=<?= $biere['id_biere'] ?>">
+                        <button class="carrousel-btnplus">En savoir plus +</button>
+                    </a>
+                </div>
             </div>
-        <?php endforeach; ?>
-    </section>
+        </div>
+    <?php endforeach; ?>
 
-    <script src="../../../public/js/carrousel.js"></script>
+    <button id="nextBtn" class="carrousel-btn droite">&#8594;</button>
+</section>
 
+<script src="../../../public/js/fonctionalites.js"></script>
+<main>
     <section class="accueil">
         <h1>QUE CALUFA !</h1>
         <h2>Phrase d'accroche</h2>
