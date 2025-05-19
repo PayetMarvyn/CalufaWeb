@@ -210,13 +210,16 @@ footer a {
 }
 
 .carrousel-image img {
-    max-width: 100%;
-    border-radius: 15px;
+    width: 110%;
 }
 
 .carrousel-texte {
     flex: 1;
     padding-left: 3em;
+    background-color: rgba(182, 173, 133, 0.49);
+    border-radius: 20px;
+    padding: 2em;
+    color: white;
 }
 
 .carrousel-texte h2 {
@@ -231,27 +234,28 @@ footer a {
 
 .carrousel-btn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(255, 233, 191, 0.8);
     border: none;
     padding: 1em;
-    border-radius: 50%;
-    font-size: 2em;
+    border-radius: 100%;
+    font-size: 1.6em;
     cursor: pointer;
     z-index: 2;
+    transition: 0.2s;
 }
 
-.carrousel-btn.droite .carrousel-btn.gauche :hover {
+.carrousel-btn.droite:hover,
+.carrousel-btn.gauche:hover {
     background-color: #ffcc80;
+    transform: scale(1.07);
 }
 
 .carrousel-btn.gauche {
-    left: 2%;
+    left: 4%;
 }
 
 .carrousel-btn.droite {
-    right: 2%;
+    right: 4%;
 }
 
 .carrousel-btn.gauche .carrousel-btn.droite {
@@ -270,7 +274,7 @@ footer a {
     display: inline-block;
     padding: 1rem 2rem;
     background: linear-gradient(to right, #ffcb05, #ff8800);
-    color: #1b1b1b;
+    color: #ffffff;
     font-weight: bold;
     border-radius: 30px;
     text-decoration: none;
@@ -285,8 +289,8 @@ footer a {
     transform: scale(1.05);
     background: linear-gradient(270deg, #A4D4AE, #E07A5F, #F4D35E, #E5989B, #D3E4CD, #A4D4AE);
     background-size: 1200% 100%;
-    animation: rainbow-gradient 7s linear infinite;
-    color: #fff;
+    animation: rainbow-gradient 6s linear infinite;
+    color: #464646;
 }
 
 @keyframes rainbow-gradient {
