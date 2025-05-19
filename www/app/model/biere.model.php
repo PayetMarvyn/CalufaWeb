@@ -3,10 +3,7 @@
 /**
  * fonction permettant de récupérer tous les étudiants stockés
  * dans la base de données sous forme de tableau
- * 
- * @return array
  */
-
 
 function getAllBieres () {
     $pdo = getDatabaseConnexion() ;
@@ -15,7 +12,6 @@ function getAllBieres () {
     $stmt->execute();
     return $stmt->fetchAll();
 }
-
 
  function getBiere (int $id) {
     $pdo = getDatabaseConnexion() ;
