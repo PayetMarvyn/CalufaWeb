@@ -1,4 +1,4 @@
-<main>
+<main id="fabrication">
 <h1>La fabrication de nos bières</h1>
 
     <section id="Introduction">

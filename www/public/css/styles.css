@@ -456,3 +456,10 @@ footer a {
     width: 120px;
     margin-bottom: 1rem;
 }
+
+/*fabrication*/
+
+#fabrication {
+    background-image: url(../images/fond_page_fabrication.png);
+}
+
