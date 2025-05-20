@@ -1,5 +1,19 @@
-/*fabrication*/
+/*fabrication Neemati*/
 
 #fabrication {
     background-image: url(../images/fond_page_fabrication.png);
+}
+
+#Etape {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+
+#Etape figure img{
+display: flex;
+width: 400px;
+
 }
