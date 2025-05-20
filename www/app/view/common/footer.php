@@ -7,7 +7,7 @@
                     votre avis</a>
             <p>
             <p><a href="../../../index.php?route=mentions">Mentions légales</a></p>
-            <p><a href="../../../index.php?route=contact">Nous contacter</a></p>
+            <p><a href="../../../index.php?route=contact">Contactez-nous</a></p>
             <p><a href="../../../index.php?route=faq">FAQ</a></p>
             </p>
         </div>
