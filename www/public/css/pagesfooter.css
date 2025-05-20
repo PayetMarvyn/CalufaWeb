@@ -1,0 +1,58 @@
+/* Fourmulaire contact */
+.form-contact {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-contact label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.form-contact input,
+.form-contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-contact textarea {
+    min-height: 7em;
+    max-height: 30em;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.form-contact button {
+    width: 30%;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.form-contact button:hover {
+    background-color: #005bb5;
+}
+
+/* Pages mentions contact faq*/
+.pagefooter section {
+    text-align: left;
+    margin: 0 4em 0 4em;
+}

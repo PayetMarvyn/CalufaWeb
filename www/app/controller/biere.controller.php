@@ -17,6 +17,7 @@ function generateBierePage() {
         'page_title' => "CalufaWeb - Bière",
         'view' => 'app/view/biere.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'biere.css',
     ];
 
     generatePage($data);

@@ -1,0 +1,49 @@
+/*Catalogue Nos bieres */
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogue img {
+    width: 100%;
+}
+
+.catalogue-carte {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 1%;
+}
+
+.catalogue-carte h2 {
+    margin-bottom: 0;
+}
+
+.catalogue-carte p {
+    margin: 1em 0 2em 0;
+}
+
+.catalogue button {
+    background-color: #ffe9bf;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    padding: 1em;
+    font-size: 1em;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: bold;
+    color: red;
+    transition: 0.3s;
+}
+
+.catalogue button:hover {
+    background-color: #ffcc80;
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: 0.3s;
+}

@@ -12,6 +12,7 @@ function generateFaqPage() {
         'page_title' => "CalufaWeb - FAQ",
         'view' => 'app/view/common/pagesfooter/faq.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'pagesfooter.css',
     ];
 
     generatePage($data);

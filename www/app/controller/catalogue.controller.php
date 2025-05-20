@@ -14,6 +14,7 @@ function generateCataloguePage() {
         'page_title' => "CalufaWeb - Nos bières",
         'view' => 'app/view/catalogue.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'catalogue.css',
     ];
 
     generatePage($data);

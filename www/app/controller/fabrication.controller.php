@@ -12,6 +12,7 @@ function generateFabricationPage() {
         'page_title' => "CalufaWeb - Fabrication",
         'view' => 'app/view/fabrication.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'fabrication.css',
     ];
 
     generatePage($data);

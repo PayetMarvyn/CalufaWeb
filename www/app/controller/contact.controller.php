@@ -12,6 +12,7 @@ function generateContactPage() {
         'page_title' => "CalufaWeb - Contact",
         'view' => 'app/view/common/pagesfooter/contact.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'pagesfooter.css',
     ];
 
     generatePage($data);

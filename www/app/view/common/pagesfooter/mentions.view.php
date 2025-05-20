@@ -1,7 +1,6 @@
 <main>
     <section class="pagefooter">
         <h1>Mentions légales</h1>
-
         <section>
             <h2>1. Éditeur du site</h2>
             <p>Le site <strong>Calufa</strong> (accessible à l’adresse <a href="../../index.php?route=accueil">www.calufa.com</a> est édité par <strong>CALUFA SAS</strong>, société par actions simplifiée au capital de <strong>14 779 euros</strong>, immatriculée au <strong>RCS de Moissy-Cramayel sous le numéro 54937</strong>.</p>
