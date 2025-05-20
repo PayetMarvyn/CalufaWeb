@@ -9,7 +9,6 @@
 .catalogue img {
     width: 100%;
 }
-
 .catalogue-carte {
     padding: 1em;
     display: flex;
@@ -18,14 +17,6 @@
     align-items: center;
     width: 25%;
     margin: 1%;
-}
-
-.catalogue-carte h2 {
-    margin-bottom: 0;
-}
-
-.catalogue-carte p {
-    margin: 1em 0 2em 0;
 }
 
 .catalogue button {
@@ -45,5 +36,4 @@
     background-color: #ffcc80;
     cursor: pointer;
     transform: scale(1.07);
-    transition: 0.3s;
 }
