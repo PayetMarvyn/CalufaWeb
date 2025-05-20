@@ -10,7 +10,6 @@ if (!empty($_GET['route'])) {
     $route = $_GET['route'];
 }
 
-
 switch ($route) {
     case 'accueil':
         require_once('app/controller/accueil.controller.php');
@@ -64,6 +63,13 @@ switch ($route) {
         generatePanierPage();
         break;
 
+    case 'verificationage':
+        require_once('app/controller/verificationage.controller.php');
+        generateVerificationAgePage();
+        break;
+
     default:
+        require_once('app/controller/accueil.controller.php');
+        generateHomePage();
         exit;
 }
