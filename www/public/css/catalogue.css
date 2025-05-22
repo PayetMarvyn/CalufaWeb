@@ -8,6 +8,7 @@
 
 .catalogue img {
     width: 100%;
+    border-radius: 7%;
 }
 .catalogue-carte {
     padding: 1em;
@@ -17,23 +18,6 @@
     align-items: center;
     width: 25%;
     margin: 1%;
-}
-
-.catalogue button {
-    background-color: #ffe9bf;
-    border: none;
-    border-radius: 10px;
-    width: 50%;
-    padding: 1em;
-    font-size: 1em;
-    font-family: 'Winky Sans', sans-serif;
-    font-weight: bold;
-    color: red;
-    transition: 0.3s;
-}
-
-.catalogue button:hover {
-    background-color: #ffcc80;
-    cursor: pointer;
-    transform: scale(1.07);
+    border: rgb(255, 68, 0) solid ;
+    border-radius: 7%;
 }
