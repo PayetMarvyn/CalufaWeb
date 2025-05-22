@@ -12,6 +12,7 @@ function generateHistoirePage() {
         'page_title' => "CalufaWeb - Histoire",
         'view' => 'app/view/histoire.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'histoire.css',
     ];
 
     generatePage($data);

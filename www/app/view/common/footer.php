@@ -7,7 +7,7 @@
                     votre avis</a>
             <p>
             <p><a href="../../../index.php?route=mentions">Mentions légales</a></p>
-            <p><a href="../../../index.php?route=contact">Nous contacter</a></p>
+            <p><a href="../../../index.php?route=contact">Contactez-nous</a></p>
             <p><a href="../../../index.php?route=faq">FAQ</a></p>
             </p>
         </div>
@@ -22,9 +22,9 @@
 
         <div class="reseaux-sociaux">
             <p>Suivez nous !</p>
-            <a href="https://www.youtube.com/@CalufaBeer"><img src="../../../public/images/youtube.svg"></a>
-            <a href="https://www.instagram.com/calufa_beer/"><img src="../../../public/images/insta.svg"></a>
-            <a href="https://www.tiktok.com/@calufa_beer"><img src="../../../public/images/tiktok.svg"></a>
+            <a href="https://www.youtube.com/@CalufaBeer" target="_blank"><img src="../../../public/images/youtube.svg"></a>
+            <a href="https://www.instagram.com/calufa_beer/" target="_blank"><img src="../../../public/images/insta.svg"></a>
+            <a href="https://www.tiktok.com/@calufa_beer" target="_blank"><img src="../../../public/images/tiktok.svg"></a>
         </div>
     </footer>
 </body>

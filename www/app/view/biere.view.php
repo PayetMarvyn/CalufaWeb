@@ -1,6 +1,8 @@
 <main class="biere">
     <section class="produit">
-            <img src="<?= '../../../public/images/' . $biere['imagepng_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>">
+        <figure class="img_biere">
+            <img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>">
+        </figure>
         <div class="infos_biere">
             <h2 class="nom_biere"><?= $biere['nom'] ?></h2>
             <p class="desc_biere"><?= $biere['description'] ?></p>

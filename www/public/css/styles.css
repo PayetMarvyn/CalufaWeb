@@ -1,11 +1,4 @@
 /*Base CSS site web CALUFA */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Winky Sans', sans-serif;
-    font-weight: normal;
-}
-
 header {
     background: rgb(3, 89, 201);
     color: #fff;
@@ -50,6 +43,18 @@ a:hover {
     color: #ffe9bf;
 }
 
+
+
+
+
+
+body, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: normal;
+}
+
 h1 {
     font-size: 4em;
     font-weight: normal;
@@ -73,14 +78,12 @@ section {
 
 
 
-/*Footer et élements */
 footer {
     background: rgb(255, 68, 0);
     color: #fff;
     font-family: 'Gagalin', sans-serif;
     text-align: center;
     padding: 2em;
-    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -122,6 +125,7 @@ footer a {
 
 .reseaux-sociaux img:hover {
     transform: scale(1.2);
+<<<<<<< HEAD
 }
 
 /*Catalogue Nos bieres */
@@ -464,3 +468,6 @@ footer a {
 
 
 
+=======
+}
+>>>>>>> f413a95dee778ee8108774dc177a3af1176ae9fa

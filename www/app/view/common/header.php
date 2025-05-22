@@ -7,6 +7,13 @@
     <title>CALUFA.com</title>
     <link rel="icon" type="image/png" href="../../../public/images/logo_calufa.png">
     <link rel="stylesheet" href="../../../public/css/styles.css">
+
+    <?php if (!empty($pageSpecificCss)): ?>
+        <link rel="stylesheet" href="../../../public/css/<?= $pageSpecificCss ?>">
+    <?php else: ?>
+        <!-- Debug: $pageSpecificCss is empty or not set -->
+    <?php endif; ?>
+
     <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -13,6 +13,7 @@ function generateHomePage() {
         'page_description' => "Bienvenue sur le site de Calufa, lieu des biéres les plus fraîches et coulantes !",
         'view' => 'app/view/accueil.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'accueil.css',
     ];
 
     generatePage($data);

@@ -1,0 +1,23 @@
+/*Catalogue Nos bieres */
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogue img {
+    width: 100%;
+    border-radius: 7%;
+}
+.catalogue-carte {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 1%;
+    border: rgb(255, 68, 0) solid ;
+    border-radius: 7%;
+}

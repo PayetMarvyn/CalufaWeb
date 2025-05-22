@@ -12,6 +12,7 @@ function generateMentionsPage(){
         'page_title' => "CalufaWeb - Mentions légales",
         'view' => 'app/view/common/pagesfooter/mentions.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'pagesfooter.css',
     ];
 
     generatePage($data);

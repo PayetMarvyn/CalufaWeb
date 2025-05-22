@@ -12,6 +12,7 @@ function generateEquipePage() {
         'page_title' => "CalufaWeb - L'equipe",
         'view' => 'app/view/equipe.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'equipe.css',
     ];
 
     generatePage($data);

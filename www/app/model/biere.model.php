@@ -15,9 +15,9 @@ function getAllBieres () {
 
  function getBiere (int $id) {
     $pdo = getDatabaseConnexion() ;
-    $sql = "SELECT * FROM bieres WHERE id=:id_biere";
-    $stmt = $pdo->prepare("$sql") ;
-    $stmt->bindParam(':id_biere', $id, PDO::PARAM_INT);
-    //$stmt->execute() ;
+    $sql = "SELECT * FROM bieres WHERE id_biere = :variante";
+    $stmt = $pdo->prepare($sql) ;
+    $stmt->bindParam(':variante', $id, PDO::PARAM_INT);
+    $stmt->execute() ;
     return $stmt->fetch();
 }
