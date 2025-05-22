@@ -42,7 +42,19 @@
         </div>
 
         <div>
-            <h3></3>
+            <h3>La filtration</h3>
+            <figure>
+                <p>Elle permet d'éliminer les particules indésirables telles que la levure, etc, qui proquent la turbidité de la bière. </p>
+                <img src="../public/images/filtre.png">
+            </figure>
+        </div>
+
+        <div>
+            <h3>La clarification</h3>
+            <figure>
+                <p>Elle vise à élinmine les particules solides et à améliorer la clarté de la boisson.</p>
+                <img src="../public/images/clarification.png">
+            </figure>
         </div>
 
 </section>
