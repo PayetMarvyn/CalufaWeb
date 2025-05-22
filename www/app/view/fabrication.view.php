@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 <main id="fabrication">
+=======
+<main id="mapage">
+>>>>>>> Stashed changes
 <h1>La fabrication de nos bières</h1>
 
     <section id="Introduction">

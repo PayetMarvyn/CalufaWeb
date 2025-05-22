@@ -347,6 +347,7 @@ footer a {
 
 /*Page mentions/contact/faq*/
 
+<<<<<<< Updated upstream
 .pagefooter {
     margin: 0 7em 0 7em;
 }
@@ -471,3 +472,14 @@ footer a {
 =======
 }
 >>>>>>> f413a95dee778ee8108774dc177a3af1176ae9fa
+=======
+.mentions {
+    margin: 0 10em 0 10em;
+}
+
+
+main#mapage {
+    background-color: #ffcc80 ;
+}
+
+>>>>>>> Stashed changes
