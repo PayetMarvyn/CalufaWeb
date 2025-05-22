@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 <main id="fabrication">
-=======
-<main id="mapage">
->>>>>>> Stashed changes
 <h1>La fabrication de nos bières</h1>
 
     <section id="Introduction">
@@ -43,6 +39,10 @@
                 <img src="../public/images/truc.png">
             </figure>
 
+        </div>
+
+        <div>
+            <h3></3>
         </div>
 
 </section>
