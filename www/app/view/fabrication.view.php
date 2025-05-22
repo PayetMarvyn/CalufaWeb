@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 <main id="fabrication">
+=======
+<main id="mapage">
+>>>>>>> Stashed changes
 <h1>La fabrication de nos bières</h1>
 
     <section id="Introduction">
@@ -12,7 +16,7 @@
     <h2>Les étapes de fabrications</h2>
     <section id="Etape">
 
-        <div class="etape">
+        <div>
 
 
             <h3>Le maltage</h3>
@@ -23,9 +27,7 @@
 
         </div>
 
-        <div class="etape">
-
-
+        <div>
             <h3>La maturation</h3>
             <figure>
                 <p>Cette étape permet à la bière de s'affiner, de mûrir et d'acquérir ses qualités gustatives finales.</p>
@@ -34,10 +36,7 @@
 
         </div>
 
-
-                <div class="etape">
-
-
+        <div>
             <h3>La fermentation</h3>
             <figure>
                 <p>C'est l'étape où les levures transforment les sucres présents dans le moût en alcool et en dioxyde de carbone.</p>
