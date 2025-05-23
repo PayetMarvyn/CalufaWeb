@@ -1,4 +1,60 @@
 /*Page biere Marvyn */
 .img_biere img{
-    width: 30%;
+    width: 700px;
+}
+
+.produit {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.infos_biere {
+    text-align: start;
+}
+
+.infos_biere p {
+    padding: 0;
+}
+
+.ajout_panier {
+    margin: 50px 0px;
+}
+
+.quantite {
+    width: 60px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.biere button {
+    background-color: #ffe9bf;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    padding: 1em;
+    font-size: 1em;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: bold;
+    color: red;
+    transition: 0.3s;
+}
+
+.biere button:hover {
+    background-color: #ffcc80;
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+.avis {
+    margin: 100px auto;
+    width: 90%;
+    text-align: start;
+}
+
+.form_avis {
+    list-style-type: none;
 }
