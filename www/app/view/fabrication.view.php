@@ -12,7 +12,7 @@
     <h2>Les étapes de fabrications</h2>
     <section id="Etape">
 
-        <div class="etape">
+        <div>
 
 
             <h3>Le maltage</h3>
@@ -23,9 +23,7 @@
 
         </div>
 
-        <div class="etape">
-
-
+        <div>
             <h3>La maturation</h3>
             <figure>
                 <p>Cette étape permet à la bière de s'affiner, de mûrir et d'acquérir ses qualités gustatives finales.</p>
@@ -34,16 +32,29 @@
 
         </div>
 
-
-                <div class="etape">
-
-
+        <div>
             <h3>La fermentation</h3>
             <figure>
                 <p>C'est l'étape où les levures transforment les sucres présents dans le moût en alcool et en dioxyde de carbone.</p>
                 <img src="../public/images/truc.png">
             </figure>
 
+        </div>
+
+        <div>
+            <h3>La filtration</h3>
+            <figure>
+                <p>Elle permet d'éliminer les particules indésirables telles que la levure, etc, qui proquent la turbidité de la bière. </p>
+                <img src="../public/images/filtre.png">
+            </figure>
+        </div>
+
+        <div>
+            <h3>La clarification</h3>
+            <figure>
+                <p>Elle vise à élinmine les particules solides et à améliorer la clarté de la boisson.</p>
+                <img src="../public/images/clarification.png">
+            </figure>
         </div>
 
 </section>
