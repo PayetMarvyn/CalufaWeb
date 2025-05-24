@@ -67,5 +67,7 @@
             </form>
 
         </section>
+
+        <script src="../../../public/js/fonctionalites.js"></script>
     </section>
 </main>

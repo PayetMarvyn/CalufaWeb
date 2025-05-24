@@ -1,10 +1,23 @@
 /*Base CSS site web CALUFA */
 header {
-    background: rgb(3, 89, 201);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(3, 89, 201, 0.9);
     color: #fff;
     font-family: 'Gagalin', sans-serif;
     text-align: center;
     font-size: 2em;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header.shrink {
+    background: rgba(3, 89, 201, 0.7);
+    font-size: 1.2em;
+    padding: 0.1em 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 header ul li img {
@@ -71,7 +84,7 @@ h2 {
 }
 
 main {
-    padding: 0em 3em 0em 3em;
+    padding: 12em 3em 0em 3em;
     text-align: center;
 }
 

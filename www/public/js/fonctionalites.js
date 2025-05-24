@@ -27,3 +27,17 @@ document.addEventListener("DOMContentLoaded", function () {
         afficherCarte(current);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+    const main = document.querySelector("main");
+
+    // Effet de scroll
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 10) {
+            header.classList.add("shrink");
+        } else {
+            header.classList.remove("shrink");
+        }
+    });
+});

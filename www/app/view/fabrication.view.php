@@ -1,5 +1,5 @@
 <main id="fabrication">
-<h1>La fabrication de nos bières</h1>
+    <h1>La fabrication de nos bières</h1>
 
     <section id="Introduction">
         <p>Chez CALUFA, chaque bière est le fruit d'un trvail artisanal et acharné afin de pouvoir
@@ -57,6 +57,8 @@
             </figure>
         </div>
 
-</section>
-    
+        <!-- Fonction du header au moment du scroll (a ne pas éffacer) -->
+        <script src="../../../public/js/fonctionalites.js"></script>
+
+    </section>
 </main>

@@ -3,10 +3,14 @@
         <?php foreach ($bieres as $biere): ?>
             <div class="catalogue-carte">
                 <a href="index.php?route=biere&id=<?= $biere['id_biere'] ?>"><img src="<?= '../../../public/images/' . $biere['image_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>">
-                <h2> <?= $biere['nom'] ?> </h2>
-                <p><?= $biere['description'] ?></p>
+                    <h2> <?= $biere['nom'] ?> </h2>
+                    <p><?= $biere['description'] ?></p>
                 </a>
             </div>
         <?php endforeach; ?>
     </section>
+
+    <!-- Fonction du header au moment du scroll (a ne pas éffacer) -->
+    <script src="../../../public/js/fonctionalites.js"></script>
+
 </main>
