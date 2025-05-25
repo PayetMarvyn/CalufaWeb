@@ -49,7 +49,6 @@
     <section class="pub">
         <h1>Notre premier lancement !</h1>
         <h2>Découvrez CALUFA en action.</h2>
-        <!-- YouTube video embed -->
         <iframe style="border-radius: 20px;" width="738" height="415" src="https://www.youtube.com/embed/NCARnHIXZlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
@@ -65,7 +64,7 @@
         <div class="newsletter-contenu">
             <h2>Rejoins le Club CALUFA</h2>
             <p>Reste informé des nouvelles saveurs, des soirées tropicales<br>
-             et des actus fraîches de l’île 🌴</p>
+                et des actus fraîches de l’île 🌴</p>
             <form>
                 <input type="text" name="prenom" placeholder="Prénom" required>
                 <input type="email" name="email" placeholder="E-mail" required>

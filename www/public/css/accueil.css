@@ -1,14 +1,14 @@
-/*Page Accueil Safuan */
+/*Page Accueil Safuan*/
 
-/* Carrousel */
+/*Carrousel*/
 .carrousel {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url('../../../public/images/fondbiere.jpg') center/cover no-repeat;
+  padding: 13em 0 0;
   margin: 0;
-  padding: 13em 0 0 0;
 }
 
 .carrousel-carte {
@@ -19,6 +19,14 @@
 .carrousel-carte.active {
   display: block;
   animation: slideInRight 0.6s ease forwards;
+}
+
+.carrousel-carte.slide-right {
+  animation: slideInRight 0.6s ease forwards;
+}
+
+.carrousel-carte.slide-left {
+  animation: slideInLeft 0.6s ease forwards;
 }
 
 @keyframes slideInRight {
@@ -33,12 +41,24 @@
   }
 }
 
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .carrousel-contenu {
   display: flex;
   align-items: center;
   gap: 3em;
-  border-radius: 20px;
   padding: 2em;
+  border-radius: 20px;
 }
 
 .carrousel-image {
@@ -129,15 +149,10 @@
   }
 }
 
-
-
-
-/*Corps de la page */
-main {
-  padding: 0;
-}
-
+/* Corps de la page */
+main,
 section {
+  padding: 0;
   margin: 0;
 }
 
@@ -146,36 +161,31 @@ section {
 }
 
 /* Accueil */
+.accueil {
+  background: url(../images/fondbiereboom.png) center/cover no-repeat;
+  padding: 6em 0;
+  color: rgb(255 245 228);
+}
+
 .accueil h1 {
   margin-bottom: 0;
 }
 
-.accueil {
-  background-image: url(../images/fondbiereboom.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 6em 0 6em 0;
-  color: rgb(255 245 228);
-}
-
-/*Histoire */
+/* Histoire */
 .histoire {
-  background-image: url(../images/logo_calufa.png), url(../images/fondjorge.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 180px, center;
-  background-size: auto 100%, 100%;
-  padding: 2em 0 6em 0;
-  z-index: -1;
+  background:
+    url(../images/logo_calufa.png) no-repeat right 180px,
+    url(../images/fondjorge.jpg) no-repeat center/cover;
+  padding: 2em 0 6em;
   color: rgb(255, 250, 228);
-}
-
-.histoire p {
-  margin-bottom: 2em;
 }
 
 .histoire h1 {
   margin-bottom: 0;
+}
+
+.histoire p {
+  margin-bottom: 2em;
 }
 
 .histoire a:hover {
@@ -183,27 +193,21 @@ section {
   text-decoration: none;
 }
 
-/*Pub */
+/* Pub */
+.pub {
+  padding: 6em;
+  background: url(../images/fondplage.jpg) center/cover no-repeat;
+  color: white;
+}
+
 .pub h1 {
   margin: 0;
 }
 
-.pub {
-  padding: 6em;
-  background-image: url(../images/fondplage.jpg) ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: cover;
-  background-size: cover;
-  color: white;
-}
-
-
-/*Collaborations*/
-
+/* Collaborations */
 .collaborations {
   background: linear-gradient(-140deg, #ff7069, #feb987);
-  padding: 1em 0 0 0;
+  padding: 1em 0 0;
   color: white;
 }
 
@@ -272,9 +276,292 @@ section {
 
 .checkbox-label input {
   transform: scale(1.2);
-  margin: 0 0 0 3em;
+  margin-left: 3em;
 }
 
 .newsletter button {
-  margin: 1em 0 1em 0;
+  margin: 1em 0;
+}
+
+
+
+
+
+/*Responsive Tablet*/
+@media screen and (max-width: 768px) {
+
+  section h1 {
+    font-size: 2em;
+  }
+
+  header {
+    font-size: 1.2em;
+    padding: 0.5em 0.5em 0.5em 0em;
+  }
+
+  header ul li img {
+    width: 3em;
+  }
+
+  nav ul {
+    padding: 1em;
+
+  }
+
+  nav ul li {
+    margin: 0.3em 0;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    padding: 2em 1em;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+
+  .reseaux-sociaux p {
+    font-size: 1.4em;
+  }
+
+  .reseaux-sociaux img {
+    margin: 0 0.5em;
+  }
+
+  .apropos {
+    text-align: center;
+  }
+
+  /* Carrousel */
+  .carrousel {
+    flex-direction: column;
+    padding-top: 8em;
+  }
+
+  .carrousel-carte {
+    width: 90%;
+  }
+
+  .carrousel-contenu {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em;
+  }
+
+  .carrousel-image {
+    transform: rotate(0deg);
+  }
+
+  .carrousel-image img {
+    width: 100%;
+  }
+
+  .carrousel-btn {
+    padding: 0.8em;
+    font-size: 1.2em;
+  }
+
+  .carrousel-btn.gauche {
+    left: 2%;
+  }
+
+  .carrousel-btn.droite {
+    right: 2%;
+  }
+
+  .carrousel-btnplus {
+    width: auto;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  /* Accueil */
+  .accueil {
+    padding: 3em 1em;
+    text-align: center;
+  }
+
+  /* Histoire */
+  .histoire {
+    background-position: center;
+    background-size: cover;
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  /* Pub */
+  .pub {
+    padding: 3em 1em;
+    text-align: center;
+  }
+
+  /* Collaborations */
+
+  .collabs img {
+    width: 40%;
+    margin: 1em 0;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    padding: 2em 1em;
+  }
+
+  .newsletter-contenu {
+    padding: 1em;
+    width: 100%;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter input[type="text"] {
+    margin: 1em auto;
+  }
+
+  .checkbox-label {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .checkbox-label input {
+    margin-left: 0;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: calc(100vw * 9 / 16) !important;
+    border-radius: 20px !important;
+  }
+}
+
+/*Responsive telephone */
+@media screen and (max-width: 425px) {
+
+  section h1 {
+    font-size: 1.5em; /* plus petit que pour 768px */
+  }
+
+  header {
+    font-size: 1em;
+    padding: 0.3em 0.3em 0.3em 0em;
+  }
+
+  header ul li img {
+    width: 2.5em; /* plus petit */
+  }
+
+  nav ul {
+    padding: 0.5em;
+  }
+
+  nav ul li {
+    margin: 0.2em 0;
+  }
+
+  footer {
+    padding: 1.5em 0.5em;
+    gap: 0.7em;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+
+  .reseaux-sociaux p {
+    font-size: 1.2em;
+  }
+
+  .reseaux-sociaux img {
+    margin: 0 0.3em;
+    width: 1.8em; /* possible ajustement */
+  }
+
+  .apropos {
+    font-size: 0.9em;
+    padding: 0 1em;
+  }
+
+  /* Carrousel */
+  .carrousel {
+    padding-top: 6em;
+  }
+
+  .carrousel-carte {
+    width: 95%;
+  }
+
+  .carrousel-contenu {
+    padding: 1em;
+    gap: 0.7em;
+  }
+
+  .carrousel-image img {
+    width: 100%;
+  }
+
+  .carrousel-btn {
+    padding: 0.6em;
+    font-size: 1em;
+  }
+
+  .carrousel-btn.gauche {
+    left: 1.5%;
+  }
+
+  .carrousel-btn.droite {
+    right: 1.5%;
+  }
+
+  .carrousel-btnplus {
+    font-size: 0.9em;
+    padding: 0.7em;
+  }
+
+  /* Accueil */
+  .accueil {
+    padding: 2em 0.5em;
+  }
+
+  /* Histoire */
+  .histoire {
+    padding: 1.5em 0.5em;
+  }
+
+  /* Pub */
+  .pub {
+    padding: 2em 0.5em;
+  }
+
+  /* Collaborations */
+  .collabs img {
+    width: 60%;
+    margin: 0.7em 0;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    padding: 1.5em 0.5em;
+  }
+
+  .newsletter-contenu {
+    padding: 0.7em;
+    width: 100%;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter input[type="text"] {
+    margin: 0.8em auto;
+  }
+
+  .checkbox-label {
+    gap: 0.3em;
+  }
+
+  iframe {
+    height: calc(100vw * 9 / 16) !important;
+    border-radius: 15px !important;
+  }
 }

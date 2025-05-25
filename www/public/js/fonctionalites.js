@@ -5,28 +5,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let current = 0;
 
-    function afficherCarte(index) {
-        cartes.forEach((carte, i) => {
-            carte.classList.remove("active");
+    function afficherCarte(index, direction = "right") {
+        cartes.forEach((carte) => {
+            carte.classList.remove("active", "slide-right", "slide-left");
         });
 
-        // Redéclenche l'animation à chaque affichage
         const carteActuelle = cartes[index];
         carteActuelle.classList.add("active");
+
+        if (direction === "right") {
+            carteActuelle.classList.add("slide-right");
+        } else {
+            carteActuelle.classList.add("slide-left");
+        }
     }
 
-    afficherCarte(current);
+    afficherCarte(current); // Affiche la première carte
 
     prevBtn.addEventListener("click", () => {
         current = (current - 1 + cartes.length) % cartes.length;
-        afficherCarte(current);
+        afficherCarte(current, "left");
     });
 
     nextBtn.addEventListener("click", () => {
         current = (current + 1) % cartes.length;
-        afficherCarte(current);
+        afficherCarte(current, "right");
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header");
