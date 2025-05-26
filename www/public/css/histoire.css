@@ -1,1 +1,8 @@
 /*Page Histoire Tracy */
+.presentation_jorge {
+    display: flex;
+}
+
+.img_jorge img{
+    width: 200px;
+}
