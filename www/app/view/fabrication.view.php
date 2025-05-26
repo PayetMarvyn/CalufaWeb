@@ -2,22 +2,29 @@
     <h1>La fabrication de nos bières</h1>
 
     <section id="Introduction">
-        <p>Chez CALUFA, chaque bière est le fruit d'un trvail artisanal et acharné afin de pouvoir
-            vous des bières qualitatives avec des produits de hautes qualités.
-            De la sélection des ingrédients à la mise en bouteille, nous suivons des méthodes
-            traditionnelles tout en y portant notre touche personnelle.
+        <p>Chez CALUFA, chaque bière est le fruit d'un trvail artisanal et acharné afin de pouvoir<br>
+            vous des bières qualitatives avec des produits de hautes qualités.<br>
+            De la sélection des ingrédients à la mise en bouteille, nous suivons des méthodes<br>
+            traditionnelles tout en y portant notre touche personnelle.<br>
         </p>
     </section>
 
+
+    
+
+    
+
     <h2>Les étapes de fabrications</h2>
     <section id="Etape">
+
+    
 
         <div>
 
 
             <h3>Le maltage</h3>
             <figure>
-                <p>Cette étape est cruciale dans la fabrication d'une bière. Il consiste à faire germer les grains d'orge pour activer les enzymes nécessaires à la transformation de l'amidon en sucres fermentescibles.</p>
+                <p>Étape clé : on fait germer l’orge pour transformer l’amidon en sucres fermentescibles.</p>
                 <img src="../public/images/malt.png">
             </figure>
 
@@ -56,9 +63,9 @@
                 <img src="../public/images/clarification.png">
             </figure>
         </div>
-
+<br>
         <!-- Fonction du header au moment du scroll (a ne pas éffacer) -->
         <script src="../../../public/js/fonctionalites.js"></script>
-
+<br>
     </section>
 </main>
