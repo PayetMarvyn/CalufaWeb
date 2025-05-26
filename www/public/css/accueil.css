@@ -207,24 +207,20 @@ section {
 /* Collaborations */
 .collaborations {
   background: linear-gradient(-140deg, #ff7069, #feb987);
-  padding: 1em 0 0;
+  padding: 1em;
   color: white;
 }
 
-.collabs {
+.collabs-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 3em;
   justify-content: center;
-  flex-wrap: nowrap;
-  gap: 40px;
+  align-items: center;
 }
 
-.collabs img {
-  width: 15em;
-}
-
-.collabs div {
-  margin: 0 0.6em;
+.collabs-container img {
+  max-width: 250px;
 }
 
 /* Newsletter */
@@ -406,10 +402,13 @@ section {
 
   /* Collaborations */
 
-  .collabs img {
-    width: 12em;
-    margin: 1em 0;
+  .collaborations h1 {
+  font-size: 2.5em;
   }
+
+  .collabs-container img {
+  max-width: 200px;
+}
 
   /* Newsletter */
   .newsletter {
@@ -446,7 +445,8 @@ section {
 @media screen and (max-width: 425px) {
 
   section h1 {
-    font-size: 1.5em; /* plus petit que pour 768px */
+    font-size: 1.5em;
+    /* plus petit que pour 768px */
   }
 
   header {
@@ -455,7 +455,8 @@ section {
   }
 
   header ul li img {
-    width: 2.5em; /* plus petit */
+    width: 2.5em;
+    /* plus petit */
   }
 
   nav ul {
@@ -481,7 +482,8 @@ section {
 
   .reseaux-sociaux img {
     margin: 0 0.3em;
-    width: 1.8em; /* possible ajustement */
+    width: 1.8em;
+    /* possible ajustement */
   }
 
   .apropos {
@@ -542,12 +544,12 @@ section {
 
   /* Collaborations */
 
-  .collabs {
-    gap: 10px;
+  .collaborations h1 {
+    font-size: 2em;
   }
-  .collabs img {
-    width: 8em;
-    margin: 0.7em 0;
+
+  .collabs-container img {
+  max-width: 150px;
   }
 
   /* Newsletter */

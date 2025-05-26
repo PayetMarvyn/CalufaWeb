@@ -1,6 +1,7 @@
 <?php
 require_once 'app/controller/controller.php';
 require_once 'app/model/biere.model.php';
+require_once 'app/model/partenaire.model.php';
 /**
  * controller en charge de la génération de la page d'accueil
  *
@@ -9,6 +10,7 @@ require_once 'app/model/biere.model.php';
 function generateHomePage() {
     $data = [
         'bieres' => getAllBieres(),
+        'partenaires' => getAllPartenaires(),
         'page_title' => "CalufaWeb - Accueil",
         'page_description' => "Bienvenue sur le site de Calufa, lieu des biéres les plus fraîches et coulantes !",
         'view' => 'app/view/accueil.view.php',
