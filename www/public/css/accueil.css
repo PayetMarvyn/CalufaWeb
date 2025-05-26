@@ -216,11 +216,11 @@ section {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  gap: 40px;
 }
 
 .collabs img {
-  width: 50%;
-  transition: 0.2s;
+  width: 15em;
 }
 
 .collabs div {
@@ -399,10 +399,15 @@ section {
     text-align: center;
   }
 
+  .pub h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
   /* Collaborations */
 
   .collabs img {
-    width: 40%;
+    width: 12em;
     margin: 1em 0;
   }
 
@@ -536,8 +541,12 @@ section {
   }
 
   /* Collaborations */
+
+  .collabs {
+    gap: 10px;
+  }
   .collabs img {
-    width: 60%;
+    width: 8em;
     margin: 0.7em 0;
   }
 
@@ -548,7 +557,7 @@ section {
 
   .newsletter-contenu {
     padding: 0.7em;
-    width: 100%;
+    width: 80%;
   }
 
   .newsletter input[type="email"],

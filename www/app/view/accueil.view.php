@@ -57,6 +57,7 @@
         <h1>Nous collaborons avec</h1>
         <div class="collabs">
             <div><img src="../../../public/images/partenaire1.png" alt="Draskan"></div>
+            <div><img src="../../../public/images/partenaire2.png" alt="Odysseia"></div>
         </div>
     </section>
 
