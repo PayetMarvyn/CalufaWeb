@@ -17,10 +17,10 @@
             <?php endforeach; ?>
         </section>
 
-            <h2>Équipe Génie Biologique</h2>
+        <h2>Équipe Génie Biologique</h2>
 
         <section class=trombinoscope>
-            
+
 
             <?php foreach ($equipe as $membre): ?>
                 <?php if ($membre['id_personne'] < 6) continue; ?>
@@ -31,5 +31,8 @@
                     <p><?= $membre['description'] ?></p>
                 </div>
             <?php endforeach; ?>
-        <section>
+            <section>
+
+                <!-- Fonction du header au moment du scroll (a ne pas éffacer) -->
+                <script src="../../../public/js/fonctionalites.js"></script>
 </main>
