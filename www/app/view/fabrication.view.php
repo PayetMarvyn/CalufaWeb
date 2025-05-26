@@ -17,7 +17,7 @@
 
             <h3>Le maltage</h3>
             <figure>
-                <p>Cette étape est cruciale dans la fabrication d'une bière. Il consiste à faire germer les grains d'orge pour activer les enzymes nécessaires à la transformation de l'amidon en sucres fermentescibles.</p>
+                <p>Étape clé : on fait germer l’orge pour transformer l’amidon en sucres fermentescibles.</p>
                 <img src="../public/images/malt.png">
             </figure>
 
