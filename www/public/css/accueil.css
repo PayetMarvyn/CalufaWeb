@@ -3,12 +3,13 @@
 /*Carrousel*/
 .carrousel {
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
   background: url('../../../public/images/fondbiere.jpg') center/cover no-repeat;
   padding: 13em 0 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .carrousel-carte {
@@ -57,7 +58,7 @@
   display: flex;
   align-items: center;
   gap: 3em;
-  padding: 2em;
+  padding: 2em 2em 0;
   border-radius: 20px;
 }
 
@@ -90,15 +91,21 @@
   margin-bottom: 1.5em;
 }
 
+.carrousel-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin: 1.5em 0 2em;
+}
+
 .carrousel-btn {
-  position: absolute;
+
   background-color: rgba(255, 233, 191, 0.8);
   border: none;
   padding: 1em;
   border-radius: 50%;
-  font-size: 1.6em;
+  font-size: 1.4em;
   cursor: pointer;
-  z-index: 2;
   transition: 0.2s;
 }
 
@@ -106,6 +113,7 @@
   background-color: #ffcc80;
   transform: scale(1.07);
 }
+
 
 .carrousel-btn.gauche {
   left: 4%;
@@ -178,6 +186,9 @@ section {
     url(../images/fondjorge.jpg) no-repeat center/cover;
   padding: 2em 0 6em;
   color: rgb(255, 250, 228);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .histoire h1 {
@@ -186,6 +197,10 @@ section {
 
 .histoire p {
   margin-bottom: 2em;
+  background-color: #c39c718f;
+  width: 60%;
+  border-radius: 20px;
+  padding: 0.5em;
 }
 
 .histoire a:hover {
@@ -355,11 +370,6 @@ section {
     width: 100%;
   }
 
-  .carrousel-btn {
-    padding: 0.8em;
-    font-size: 1.2em;
-  }
-
   .carrousel-btn.gauche {
     left: 2%;
   }
@@ -403,12 +413,12 @@ section {
   /* Collaborations */
 
   .collaborations h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
   }
 
   .collabs-container img {
-  max-width: 200px;
-}
+    max-width: 200px;
+  }
 
   /* Newsletter */
   .newsletter {
@@ -511,11 +521,14 @@ section {
 
   .carrousel-btn {
     padding: 0.6em;
-    font-size: 1em;
   }
 
   .carrousel-btn.gauche {
     left: 1.5%;
+  }
+
+  .carrousel-btn-container {
+    gap: 2em;
   }
 
   .carrousel-btn.droite {
@@ -549,7 +562,7 @@ section {
   }
 
   .collabs-container img {
-  max-width: 150px;
+    max-width: 150px;
   }
 
   /* Newsletter */

@@ -10,14 +10,14 @@
     </section>
 
 
-    
 
-    
+
+
 
     <h2>Les étapes de fabrications</h2>
     <section id="Etape">
 
-    
+
 
         <div>
 
@@ -63,9 +63,8 @@
                 <img src="../public/images/clarification.png">
             </figure>
         </div>
-<br>
-        <!-- Fonction du header au moment du scroll (a ne pas éffacer) -->
-        <script src="../../../public/js/fonctionalites.js"></script>
-<br>
+        <br>
+
+        <br>
     </section>
 </main>

@@ -10,24 +10,46 @@ if (!empty($_GET['route'])) {
     $route = $_GET['route'];
 }
 
+// Définir les routes exemptées de vérification d'âge
+$pages_sans_verif_age = ['verificationage'];
+
+// Vérification d'âge obligatoire pour toutes les autres routes
+if (empty($_SESSION['age_verifie']) && !in_array($route, $pages_sans_verif_age)) {
+    // Enregistrer la route d'origine pour redirection après vérification
+    $_SESSION['redirect_after_age'] = "index.php?route=" . $route;
+
+    // Ajouter les paramètres GET éventuels (comme un ID de bière)
+    $params = [];
+    foreach ($_GET as $key => $value) {
+        if ($key !== 'route') {
+            $params[] = urlencode($key) . '=' . urlencode($value);
+        }
+    }
+    if (!empty($params)) {
+        $_SESSION['redirect_after_age'] .= '&' . implode('&', $params);
+    }
+
+    // Redirection vers la page de vérification d'âge
+    header("Location: index.php?route=verificationage");
+    exit();
+}
+
+// ROUTER
 switch ($route) {
     case 'accueil':
         require_once('app/controller/accueil.controller.php');
         generateHomePage();
-
         break;
 
     case 'catalogue':
         $pageSpecificCss = 'catalogue.css';
         require_once('app/controller/catalogue.controller.php');
         generateCataloguePage();
-
         break;
 
     case 'biere':
         require_once('app/controller/biere.controller.php');
         generateBierePage();
-
         break;
 
     case 'equipe':
@@ -49,11 +71,12 @@ switch ($route) {
         require_once('app/controller/mentions.controller.php');
         generateMentionsPage();
         break;
-    
+
     case 'faq':
         require_once('app/controller/faq.controller.php');
         generateFaqPage();
         break;
+
     case 'contact':
         require_once('app/controller/contact.controller.php');
         generateContactPage();
@@ -69,8 +92,17 @@ switch ($route) {
         generateVerificationAgePage();
         break;
 
+    case 'reset': // Utilitaire pour déboguer et réinitialiser la session
+        session_destroy();
+        header("Location: index.php");
+        exit();
+
+    case 'pagenontrouvable404':
+        require_once('app/controller/page404.controller.php');
+        generatePageNonTrouvable();
+
     default:
-        require_once('app/controller/accueil.controller.php');
-        generateHomePage();
-        exit;
+        require_once('app/controller/page404.controller.php');
+        generatePageNonTrouvable();
+        exit();
 }

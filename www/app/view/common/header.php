@@ -21,6 +21,8 @@
         rel="stylesheet">
 </head>
 
+<script src="../../../public/js/fonctionalites.js"></script>
+
 <body>
     <header>
         <nav>

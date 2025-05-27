@@ -1,0 +1,171 @@
+
+/*Page 404 quand la page n'est pas trouvé */
+.button404 {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #ffcb05, #ff8800);
+    text-decoration: none;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.button404:hover {
+    transform: scale(1.05);
+    background: linear-gradient(270deg, #A4D4AE, #E07A5F, #F4D35E, #E5989B, #d2e3cc, #96cca1);
+    background-size: 1200% 100%;
+    animation: rainbow-gradient 6s linear infinite;
+    color: #464646;
+}
+
+main {
+    background-image: url('../images/fondjorge.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    margin: 0;
+    padding: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+section div {
+    padding: 2em;
+    border-radius: 20px;
+    background-color: rgba(188, 181, 152, 0.49);
+    width: 55%;
+}
+
+section p {
+    color: black;
+}
+
+@keyframes rainbow-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.container404 img {
+    width: 30%;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.2em 0 0 0;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0.2em
+}
+
+
+
+/* Responsive tablet */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.5em;
+        padding: 0.3em;
+    }
+
+    nav ul {
+        gap: 10px;
+        font-size: 0.6em;
+    }
+
+    main {
+        padding: 6em 0 0;
+    }
+
+    section div {
+        width: 90%;
+        padding: 1em;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    .container404 img {
+        width: 50%;
+    }
+
+    .button404 {
+        padding: 0.8rem 1.6rem;
+        font-size: 0.8em;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0 0 1em;
+    }
+
+    .apropos, .reseaux-sociaux {
+        width: 80%;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .reseaux-sociaux img {
+        width: 50px;
+        margin: 0 0.5em;
+        
+    }
+}
+
+/* Responsive tel */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+        padding: 0em;
+    }
+
+    .container404 img {
+        width: 70%;
+    }
+
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    .button404 {
+        font-size: 0.7em;
+    }
+
+    nav ul {
+        gap: 0px;
+        font-size: 0.6em;
+    }
+
+    main {
+        padding: 3em 0 0;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .reseaux-sociaux img {
+        width: 40px;
+        margin: 0 0.3em;
+    }
+
+}

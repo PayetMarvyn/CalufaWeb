@@ -1,24 +1,39 @@
 /*Page verification d'âge */
-.hero {
-    background: url('images/plage-chaleur.jpg') center/cover no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
+.verif-age {
+  text-align: center;
+  margin: 10vh auto;
+  max-width: 600px;
+  padding: 2em;
+  background-color: #fdf3e7;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
-.overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 3rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(5px);
-    max-width: 700px;
+.verif-age h1 {
+  font-size: 2em;
+  color: #2a2a2a;
+  margin-bottom: 1em;
 }
 
-.logo {
-    width: 120px;
-    margin-bottom: 1rem;
+.verif-age button {
+  padding: 1em 2em;
+  margin: 0.5em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.verif-age button[value="oui"] {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.verif-age button[value="non"] {
+  background-color: #d9534f;
+  color: white;
+}
+
+main {
+  padding: 10em 0 0 0;
 }

@@ -12,7 +12,6 @@
 
         <!-- Faut ajouter le prix de la biere + un bouton ajouter au panier -->
 
-    <!-- Fonction du header au moment du scroll (a ne pas éffacer) -->
-    <script src="../../../public/js/fonctionalites.js"></script>
+
 
 </main>

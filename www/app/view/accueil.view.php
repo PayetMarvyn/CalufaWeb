@@ -1,5 +1,4 @@
 <section class="carrousel">
-    <button id="prevBtn" class="carrousel-btn gauche">&#8592;</button>
 
     <?php foreach ($bieres as $index => $biere): ?>
         <div class="carrousel-carte" data-index="<?= $index ?>">
@@ -20,10 +19,11 @@
         </div>
     <?php endforeach; ?>
 
-    <button id="nextBtn" class="carrousel-btn droite">&#8594;</button>
+    <div class="carrousel-btn-container">
+        <button id="prevBtn" class="carrousel-btn gauche">←</button>
+        <button id="nextBtn" class="carrousel-btn droite">→</button>
+    </div>
 </section>
-
-<script src="../../../public/js/fonctionalites.js"></script>
 
 <main>
     <section class="accueil">

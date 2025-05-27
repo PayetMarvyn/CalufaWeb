@@ -28,9 +28,6 @@
         </div>
     </section>
 
-    <!-- Fonction du header au moment du scroll (a ne pas éffacer) -->
-    <script src="../../../public/js/fonctionalites.js"></script>
-
     <section class="avis">
         <h2>Noter notre produit</h2>
         <ul class="form_avis">
