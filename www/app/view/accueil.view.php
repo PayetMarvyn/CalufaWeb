@@ -5,14 +5,14 @@
         <div class="carrousel-carte" data-index="<?= $index ?>">
             <div class="carrousel-contenu">
                 <div class="carrousel-image">
-                    <a href="index.php?route=biere&id=<?= $biere['id_biere'] ?>">
-                        <img src="<?= '../../../public/images/' . $biere['imagepng_url'] ?>" alt="Bière <?= $biere['id_biere'] ?>">
+                    <a href="index.php?route=biere&id=<?= htmlspecialchars($biere['id_biere']) ?>">
+                        <img src="<?= '../../../public/images/' . htmlspecialchars($biere['imagepng_url']) ?>" alt="Bière <?= htmlspecialchars($biere['id_biere']) ?>">
                     </a>
                 </div>
                 <div class="carrousel-texte">
-                    <h2><?= $biere['nom'] ?></h2>
-                    <p><?= $biere['description'] ?></p>
-                    <a href="index.php?route=biere&id=<?= $biere['id_biere'] ?>">
+                    <h2><?= htmlspecialchars($biere['nom']) ?></h2>
+                    <p><?= htmlspecialchars($biere['description']) ?></p>
+                    <a href="index.php?route=biere&id=<?= htmlspecialchars($biere['id_biere']) ?>">
                         <button class="carrousel-btnplus">En savoir plus +</button>
                     </a>
                 </div>
@@ -24,6 +24,7 @@
 </section>
 
 <script src="../../../public/js/fonctionalites.js"></script>
+
 <main>
     <section class="accueil">
         <h1>QUE CALUFA !</h1>
@@ -56,7 +57,7 @@
         <h1>Nous collaborons avec</h1>
         <div class="collabs-container">
             <?php foreach ($partenaires as $partenaire): ?>
-                <div><img src="../../../public/images/<?= $partenaire['image_url'] ?>" alt="<?= $partenaire['nom'] ?>"></div>
+                <div><img src="../../../public/images/<?= htmlspecialchars($partenaire['image_url']) ?>" alt="<?= htmlspecialchars($partenaire['nom']) ?>"></div>
             <?php endforeach; ?>
         </div>
     </section>
@@ -67,8 +68,8 @@
             <p>Reste informé des nouvelles saveurs, des soirées tropicales<br>
                 et des actus fraîches de l’île 🌴</p>
             <form>
-                <input type="text" name="prenom" placeholder="Prénom" required>
-                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="text" name="prenom" placeholder="Prénom" maxlength="50" required>
+                <input type="email" name="email" placeholder="E-mail" maxlength="50" required>
 
                 <label class="checkbox-label">
                     <input type="checkbox" required>
