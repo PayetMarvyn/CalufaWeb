@@ -9,7 +9,7 @@ require_once 'app/controller/controller.php';
  */
 function generateHistoirePage() {
     $data = [
-        'page_title' => "CalufaWeb - Histoire",
+        'page_title' => "Notre histoire | CALUFA",
         'view' => 'app/view/histoire.view.php',
         'layout' => 'app/view/common/layout.php',
         'pageSpecificCss' => 'histoire.css',

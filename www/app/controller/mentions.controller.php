@@ -9,7 +9,7 @@ require_once 'app/controller/controller.php';
  */
 function generateMentionsPage(){
     $data = [
-        'page_title' => "CalufaWeb - Mentions légales",
+        'page_title' => "Mentions légales | CALUFA",
         'view' => 'app/view/common/pagesfooter/mentions.view.php',
         'layout' => 'app/view/common/layout.php',
         'pageSpecificCss' => 'pagesfooter.css',

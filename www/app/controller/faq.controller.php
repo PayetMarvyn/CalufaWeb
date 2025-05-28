@@ -9,7 +9,7 @@ require_once 'app/controller/controller.php';
  */
 function generateFaqPage() {
     $data = [
-        'page_title' => "CalufaWeb - FAQ",
+        'page_title' => "FAQ | CALUFA",
         'view' => 'app/view/common/pagesfooter/faq.view.php',
         'layout' => 'app/view/common/layout.php',
         'pageSpecificCss' => 'pagesfooter.css',

@@ -14,7 +14,7 @@ function generateBierePage() {
 
     $data = [
         'biere' => getBiere($id),
-        'page_title' => "CalufaWeb - Bière",
+        'page_title' => "Bière | CALUFA",
         'view' => 'app/view/biere.view.php',
         'layout' => 'app/view/common/layout.php',
         'pageSpecificCss' => 'biere.css',

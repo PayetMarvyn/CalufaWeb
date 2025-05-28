@@ -11,7 +11,7 @@ require_once 'app/model/biere.model.php';
 function generateCataloguePage() {
     $data = [
         'bieres' => getAllBieres(),
-        'page_title' => "CalufaWeb - Nos bières",
+        'page_title' => "Catalogue | CALUFA",
         'view' => 'app/view/catalogue.view.php',
         'layout' => 'app/view/common/layout.php',
         'pageSpecificCss' => 'catalogue.css',

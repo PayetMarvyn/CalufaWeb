@@ -9,7 +9,7 @@ require_once 'app/controller/controller.php';
  */
 function generateContactPage() {
     $data = [
-        'page_title' => "CalufaWeb - Contact",
+        'page_title' => "Contact | CALUFA",
         'view' => 'app/view/common/pagesfooter/contact.view.php',
         'layout' => 'app/view/common/layout.php',
         'pageSpecificCss' => 'pagesfooter.css',

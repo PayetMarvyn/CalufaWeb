@@ -6,8 +6,8 @@
 // Affichage du header
 include 'app/view/common/header.php';
 
-//Affichage de la vue
+// Affichage de la vue
 echo $content;
 
-//Affichage du footer
+// Affichage du footer
 include 'app/view/common/footer.php';

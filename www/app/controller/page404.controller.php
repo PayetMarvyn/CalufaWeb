@@ -9,7 +9,7 @@ require_once 'app/controller/controller.php';
  */
 function generatePageNonTrouvable() {
     $data = [
-        'page_title' => "CalufaWeb - Erreur 404",
+        'page_title' => "Erreur 404 | CALUFA ",
         'view' => 'app/view/page404.view.php',
         'layout' => 'app/view/common/layout.php',
         'pageSpecificCss' => 'page404.css',

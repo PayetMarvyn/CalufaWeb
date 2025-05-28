@@ -25,7 +25,7 @@ function generateVerificationAgePage() {
     }
 
     $data = [
-        'page_title' => "CalufaWeb - Vérification d'âge",
+        'page_title' => "CALUFA",
         'view' => 'app/view/verificationage.view.php',
         'layout' => 'app/view/common/layout.php',
         'pageSpecificCss' => 'verifage.css',
