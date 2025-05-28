@@ -42,7 +42,6 @@ switch ($route) {
         break;
 
     case 'catalogue':
-        $pageSpecificCss = 'catalogue.css';
         require_once('app/controller/catalogue.controller.php');
         generateCataloguePage();
         break;

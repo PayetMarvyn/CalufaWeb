@@ -2,7 +2,7 @@
     <section>
         <div class="container404">
             <img src="../../public/images/jorge_perdu.png" alt="Jorge la grenouille" />
-            <h2>Oops !</h2>
+            <h2>Oups !</h2>
             <h1>404 - Page introuvable</h1>
             <p>
                 Même Jorge s’est perdue...
