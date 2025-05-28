@@ -35,5 +35,19 @@
 }
 
 main {
-  padding: 10em 0 0 0;
+  padding: 0em;
+}
+
+body {
+  background-image: url('../images/fondjorge.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.verif-age img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
 }

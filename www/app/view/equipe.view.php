@@ -11,7 +11,6 @@
                 <div class="carte">
                     <img src="<?= '../../../public/images/' . $membre['image_url'] ?>" alt="Membre <?= $membre['id_personne'] ?>">
                     <p><?= $membre['prenom'] ?> <?= $membre['nom'] ?></p>
-                    <p><?= $membre['equipe_type'] ?></p>
                     <p><?= $membre['description'] ?></p>
                 </div>
             <?php endforeach; ?>
@@ -27,14 +26,14 @@
                 <div class="carte">
                     <img src="<?= '../../../public/images/' . $membre['image_url'] ?>" alt="Membre <?= $membre['id_personne'] ?>">
                     <p><?= $membre['prenom'] ?> <?= $membre['nom'] ?></p>
-                    <p><?= $membre['equipe_type'] ?></p>
                     <p><?= $membre['description'] ?></p>
                 </div>
             <?php endforeach; ?>
             <section>
 
-            <!-- Ajout de la vidéo coulisse -->
-                
+                <br>
+                <br>
 
-                
+            <iframe style="border-radius: 20px;" width="738" height="415" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
 </main>
