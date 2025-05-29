@@ -29,7 +29,13 @@
                 </li>
                 <li><a href="../../../index.php?route=histoire">Histoire</a></li>
                 <li><a href="../../../index.php?route=equipe">Équipe</a></li>
-                <li><a href="../../../index.php?route=panier"><img src="../../../public/images/shoppingcart.svg" style="width: 1em;"></a></li>
+                <li class="panier-header">
+                    <a href="../../../index.php?route=panier" class="panier-lien">
+                        <img src="../../../public/images/shoppingcart.svg" class="panier-icone" alt="Panier">
+                        <span class="panier-compteur" id="panier-compteur">0</span>
+                    </a>
+                </li>
+
             </ul>
         </nav>
     </header>

@@ -71,14 +71,14 @@ switch ($route) {
         generateMentionsPage();
         break;
 
-    case 'faq':
-        require_once('app/controller/faq.controller.php');
-        generateFaqPage();
-        break;
-
     case 'contact':
         require_once('app/controller/contact.controller.php');
         generateContactPage();
+        break;
+
+    case 'faq':
+        require_once('app/controller/faq.controller.php');
+        generateFaqPage();
         break;
 
     case 'panier':

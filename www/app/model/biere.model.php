@@ -13,7 +13,7 @@ function getAllBieres () {
     return $stmt->fetchAll();
 }
 
- function getBiere (int $id) {
+function getBiere (int $id) {
     $pdo = getDatabaseConnexion() ;
     $sql = "SELECT * FROM bieres WHERE id_biere = :variante";
     $stmt = $pdo->prepare($sql) ;

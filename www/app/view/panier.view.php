@@ -1,5 +1,5 @@
 <main>
-    <section>
-        Page du panier
+    <section class="panier">
+        <h1>Votre panier</h1>
     </section>
 </main>

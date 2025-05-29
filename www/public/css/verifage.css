@@ -27,11 +27,18 @@
 .verif-age button[value="oui"] {
   background-color: #5cb85c;
   color: white;
+  transition: 0.2s ease;
 }
 
 .verif-age button[value="non"] {
   background-color: #d9534f;
   color: white;
+  transition: 0.2s ease;
+}
+
+.verif-age button:hover {
+  transform: scale(1.05);
+
 }
 
 main {
@@ -49,5 +56,4 @@ body {
   max-width: 30%;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 1em;
 }
