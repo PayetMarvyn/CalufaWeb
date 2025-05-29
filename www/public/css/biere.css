@@ -1,4 +1,7 @@
 /*Page biere Marvyn */
+
+/*infos des bières*/
+
 .img_biere img{
     width: 700px;
 }
@@ -18,19 +21,29 @@
     padding: 0;
 }
 
+
+/*panier*/
+
 .ajout_panier {
     margin: 50px 0px;
+    display: flex;
+    justify-content: center;
 }
 
-.quantite {
-    width: 60px;
-    height: 45px;
-    font-size: 18px;
-    border-radius: 5px;
-    margin: 15px;
+.quantite_ajout {
+    display: flex;
+    width: 100px;
+    margin-right: 30px;
 }
 
-.biere button {
+.valeur_panier {
+    padding: 0px 10px;
+}
+
+
+/*Boutons*/
+
+#btn_ajout_panier {
     background-color: #ffe9bf;
     border: none;
     border-radius: 10px;
@@ -43,11 +56,30 @@
     transition: 0.3s;
 }
 
-.biere button:hover {
+#btn_ajout_panier:hover {
     background-color: #ffcc80;
     cursor: pointer;
     transform: scale(1.07);
 }
+
+.btn_panier {
+    background-color: #ffffff00;
+    border: none;
+    padding: 0px 20px;
+    font-size: 30px;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: bold;
+    color: red;
+    transition: 0.3s;
+}
+
+.btn_panier:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+
+/*Avis*/
 
 .avis {
     margin: 100px auto;
@@ -67,4 +99,22 @@
     border: none;
     border-radius: 5px;
     margin: 5px 0px;
+}
+
+#btn_avis {
+    background-color: #ffe9bf;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 1em;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: bold;
+    color: red;
+    transition: 0.3s
+}
+
+#btn_avis:hover {
+    background-color: #ffcc80;
+    cursor: pointer;
+    transform: scale(1.07);
 }
