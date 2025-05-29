@@ -47,3 +47,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+// gestion ajout au panier
+
+document.addEventListener("DOMContentLoaded", function() {
+    const btnPanierPlus = document.getElementById("panier_plus");
+    const btnPanierMoins = document.getElementById("panier_moins");
+    const quantitePanier = document.getElementById("quantite_panier");
+    const btnAjoutPanier = document.getElementById("btn_ajout_panier");
+
+    let quantiteAjoutee = 1;
+
+    btnPanierPlus.addEventListener("click", () => {
+        quantiteAjoutee = quantiteAjoutee + 1;
+        quantitePanier.textContent = quantiteAjoutee;
+    });
+
+    btnPanierMoins.addEventListener("click", () => {
+        if (quantiteAjoutee > 1) {
+            quantiteAjoutee = quantiteAjoutee - 1;
+            quantitePanier.textContent = quantiteAjoutee;
+        }
+    });
+});
+
+
+
