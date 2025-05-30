@@ -86,6 +86,40 @@ switch ($route) {
         generatePanierPage();
         break;
 
+    case 'ajouter_panier': //Initialisation du panier par la session ou lieu de local
+        if (!isset($_SESSION['panier'])) {
+            $_SESSION['panier'] = [];
+        }
+
+        $id = $_POST['id'];
+        $nom = $_POST['nom'];
+        $prix = (float) $_POST['prix'];
+        $image = $_POST['image'];
+
+        // Vérifie si l'article existe déjà dans le panier
+        $trouvé = false;
+        foreach ($_SESSION['panier'] as &$article) {
+            if ($article['id'] == $id) {
+                $article['quantite']++;
+                $trouvé = true;
+                break;
+            }
+        }
+
+        if (!$trouvé) {
+            $_SESSION['panier'][] = [
+                'id' => $id,
+                'nom' => $nom,
+                'prix' => $prix,
+                'image' => $image,
+                'quantite' => 1
+            ];
+        }
+
+        header('Location: index.php?route=catalogue');
+        exit();
+
+
     case 'verificationage':
         require_once('app/controller/verificationage.controller.php');
         generateVerificationAgePage();

@@ -49,29 +49,96 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+function ajouterAuPanier(biere) {
+  const panier = JSON.parse(localStorage.getItem('panier')) || [];
 
-// gestion ajout au panier
+  const index = panier.findIndex(item => item.id === biere.id);
+  if (index !== -1) {
+    panier[index].quantite += 1;
+  } else {
+    panier.push({ ...biere, quantite: 1 });
+  }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const btnPanierPlus = document.getElementById("panier_plus");
-    const btnPanierMoins = document.getElementById("panier_moins");
-    const quantitePanier = document.getElementById("quantite_panier");
-    const btnAjoutPanier = document.getElementById("btn_ajout_panier");
+  localStorage.setItem('panier', JSON.stringify(panier));
+  mettreAJourCompteurPanier();
+}
 
-    let quantiteAjoutee = 1;
+function mettreAJourCompteurPanier() {
+  const panier = JSON.parse(localStorage.getItem('panier')) || [];
+  const totalArticles = panier.reduce((total, item) => total + item.quantite, 0);
 
-    btnPanierPlus.addEventListener("click", () => {
-        quantiteAjoutee = quantiteAjoutee + 1;
-        quantitePanier.textContent = quantiteAjoutee;
+  const compteur = document.getElementById('panier-compteur');
+  if (compteur) {
+    compteur.textContent = totalArticles;
+    compteur.style.display = totalArticles > 0 ? 'inline-block' : 'none';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const boutons = document.querySelectorAll('.btn-ajout-panier');
+
+  boutons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const biere = {
+        id: parseInt(btn.dataset.id),
+        nom: btn.dataset.nom,
+        prix: parseFloat(btn.dataset.prix)
+      };
+      ajouterAuPanier(biere);
+      alert(`${biere.nom} a été ajoutée au panier.`);
     });
+  });
 
-    btnPanierMoins.addEventListener("click", () => {
-        if (quantiteAjoutee > 1) {
-            quantiteAjoutee = quantiteAjoutee - 1;
-            quantitePanier.textContent = quantiteAjoutee;
-        }
-    });
+  mettreAJourCompteurPanier();
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const panier = JSON.parse(localStorage.getItem('panier')) || [];
+  const contenu = document.getElementById('contenu-panier');
+  const totalEl = document.getElementById('total-panier');
 
+  function afficherPanier() {
+    contenu.innerHTML = '';
+    let total = 0;
 
+    panier.forEach((item, index) => {
+      const sousTotal = item.prix * item.quantite;
+      total += sousTotal;
+
+      const carte = document.createElement('div');
+      carte.classList.add('panier-carte');
+      carte.innerHTML = `
+        <img src="/public/images/${item.image}" alt="${item.nom}">
+        <div class="panier-info">
+          <h3>${item.nom}</h3>
+          <p>${item.prix.toFixed(2)} €</p>
+        </div>
+        <div class="panier-quantite">
+          <button onclick="changerQuantite(${index}, -1)">-</button>
+          <input type="text" value="${item.quantite}" readonly>
+          <button onclick="changerQuantite(${index}, 1)">+</button>
+        </div>
+        <p>${sousTotal.toFixed(2)} €</p>
+        <button onclick="supprimerArticle(${index})">🗑️</button>
+      `;
+      contenu.appendChild(carte);
+    });
+
+    totalEl.textContent = total.toFixed(2) + ' €';
+  }
+
+  window.changerQuantite = function(index, delta) {
+    panier[index].quantite += delta;
+    if (panier[index].quantite <= 0) panier.splice(index, 1);
+    localStorage.setItem('panier', JSON.stringify(panier));
+    afficherPanier();
+  }
+
+  window.supprimerArticle = function(index) {
+    panier.splice(index, 1);
+    localStorage.setItem('panier', JSON.stringify(panier));
+    afficherPanier();
+  }
+
+  afficherPanier();
+});

@@ -10,6 +10,7 @@
     width: 100%;
     border-radius: 7%;
 }
+
 .catalogue-carte {
     padding: 1em;
     display: flex;
@@ -21,14 +22,47 @@
     border-radius: 7%;
 }
 
-.catalogue a{
+.catalogue a {
     color: black;
 }
- 
- .catalogue a:hover {
+
+.catalogue a:hover {
     color: rgb(255, 68, 0);
 }
 
 .catalogue-carte:hover {
     border: rgb(3, 89, 201) solid;
+}
+
+.btn-panier {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.btn-panier button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #ffcb05, #ff8800);
+    text-decoration: none;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.btn-panier button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(270deg, #A4D4AE, #E07A5F, #F4D35E, #E5989B, #d2e3cc, #96cca1);
+    background-size: 1200% 100%;
+    animation: rainbow-gradient 6s linear infinite;
+    color: #464646;
 }

@@ -1,3 +1,17 @@
+<?php
+$nbArticles = 0;
+$totalPanier = 0;
+
+if (!empty($_SESSION['panier'])) {
+    foreach ($_SESSION['panier'] as $article) {
+        $quantite = isset($article['quantite']) ? (int)$article['quantite'] : 0;
+        $prix = isset($article['prix']) ? (float)$article['prix'] : 0.0;
+        $nbArticles += $quantite;
+        $totalPanier += $prix * $quantite;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -29,13 +43,24 @@
                 </li>
                 <li><a href="../../../index.php?route=histoire">Histoire</a></li>
                 <li><a href="../../../index.php?route=equipe">Équipe</a></li>
-                <li class="panier-header">
+                <li>
                     <a href="../../../index.php?route=panier" class="panier-lien">
-                        <img src="../../../public/images/shoppingcart.svg" class="panier-icone" alt="Panier">
-                        <span class="panier-compteur" id="panier-compteur">0</span>
+                        <div>
+                            <img src="/public/images/shoppingcart.svg" alt="Panier" style="width: 1em;">
+                            <span class="panier-compteur"><?= $nbArticles ?></span>
+
+                        </div>
+
+                        <div class ="panier-info">
+                            <span>
+                                Mon Panier
+                            </span>
+                            <span class="panier-total">
+                                <?= number_format($totalPanier, 2, ',', ' ') ?> €
+                            </span>
+                        </div>
                     </a>
                 </li>
-
             </ul>
         </nav>
     </header>
