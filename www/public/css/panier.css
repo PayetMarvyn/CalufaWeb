@@ -1,40 +1,40 @@
-.panier {
-  padding: 4em;
-  color: white;
-}
+  .panier {
+    padding: 4em;
+    color: white;
+  }
 
-.panier-carte {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(255, 248, 230, 0.1);
-  padding: 1em;
-  margin-bottom: 1em;
-  border-radius: 20px;
-}
+  .panier-carte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 248, 230, 0.1);
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+  }
 
-.panier-carte img {
-  height: 5em;
-}
+  .panier-carte img {
+    height: 5em;
+  }
 
-.panier-info {
-  flex: 1;
-  margin: 0 1em;
-}
+  .panier-info {
+    flex: 1;
+    margin: 0 1em;
+  }
 
-.panier-quantite input {
-  width: 50px;
-  text-align: center;
-}
+  .panier-quantite input {
+    width: 50px;
+    text-align: center;
+  }
 
-.panier-quantite button {
-  margin: 0 0.5em;
-  font-weight: bold;
-  cursor: pointer;
-}
+  .panier-quantite button {
+    margin: 0 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-.panier-total {
-  text-align: right;
-  font-size: 1.5em;
-  margin-top: 2em;
-}
+  .panier-total {
+    text-align: right;
+    font-size: 1.5em;
+    margin-top: 2em;
+  }

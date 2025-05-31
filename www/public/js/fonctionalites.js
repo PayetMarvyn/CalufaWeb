@@ -1,3 +1,5 @@
+//Fonctionnelent du carrousel de la page d'accueil
+
 document.addEventListener("DOMContentLoaded", function () {
     const cartes = document.querySelectorAll(".carrousel-carte");
     const prevBtn = document.getElementById("prevBtn");
@@ -34,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+// Effet de scroll pour le header (il devient plus petit au scroll)
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header");
     const main = document.querySelector("main");
@@ -49,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// Système de panier d'achat
 function ajouterAuPanier(biere) {
   const panier = JSON.parse(localStorage.getItem('panier')) || [];
 
@@ -63,6 +70,7 @@ function ajouterAuPanier(biere) {
   mettreAJourCompteurPanier();
 }
 
+//Compteur du panier
 function mettreAJourCompteurPanier() {
   const panier = JSON.parse(localStorage.getItem('panier')) || [];
   const totalArticles = panier.reduce((total, item) => total + item.quantite, 0);
@@ -74,6 +82,7 @@ function mettreAJourCompteurPanier() {
   }
 }
 
+//Bouton ajouter au panier
 document.addEventListener('DOMContentLoaded', () => {
   const boutons = document.querySelectorAll('.btn-ajout-panier');
 
@@ -92,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
   mettreAJourCompteurPanier();
 });
 
+//Affichage des elements du panier
 document.addEventListener('DOMContentLoaded', () => {
   const panier = JSON.parse(localStorage.getItem('panier')) || [];
   const contenu = document.getElementById('contenu-panier');
@@ -141,4 +151,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   afficherPanier();
+});
+
+// Message alert d'ajout au panier
+document.addEventListener('DOMContentLoaded', () => {
+    const toast = document.getElementById('toast');
+    if (toast) {
+        // Apparition
+        toast.classList.add('show');
+
+        // Disparition après 4 secondes
+        setTimeout(() => {
+            toast.classList.remove('show');
+            toast.classList.add('hide');
+
+            // Optionnel : supprimer l'élément du DOM après l'animation
+            setTimeout(() => {
+                toast.remove();
+            }, 500); // attendre la fin de l'animation
+        }, 4000);
+    }
 });

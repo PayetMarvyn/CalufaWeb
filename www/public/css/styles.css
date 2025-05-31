@@ -49,7 +49,6 @@ nav ul li a {
     transition: 0.2s;
 }
 
-
 .panier-lien {
     position: relative;
     display: flex;
@@ -80,7 +79,6 @@ nav ul li a {
     color: #fff9d8;
 }
 
-
 .panier-compteur {
     position: absolute;
     top: -6px;
@@ -91,6 +89,43 @@ nav ul li a {
     padding: 0.3em 0.6em;
     font-size: 0.5em;
 }
+
+#toast {
+    position: fixed;
+    top: 20px;
+    right: -400px;
+    background-color: #118C4F;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 9999;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#toast.show {
+    right: 20px;
+    opacity: 1;
+}
+
+#toast.hide {
+    right: -400px;
+    opacity: 0;
+}
+
+
+.toast-visible {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+#toast.toast-hidden {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+
 
 
 

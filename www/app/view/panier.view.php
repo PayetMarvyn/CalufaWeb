@@ -19,7 +19,7 @@
                     <?php $total = 0; ?>
                     <?php foreach ($panier as $article): ?>
                         <tr>
-                            <td><img src="<?= htmlspecialchars($article['image']) ?>" alt="<?= htmlspecialchars($article['nom']) ?>" style="width: 50px;"></td>
+                            <td><img src="public/images/<?= htmlspecialchars($article['image']) ?>" alt="<?= htmlspecialchars($article['nom']) ?>" style="width: 50px;"></td>
                             <td><?= htmlspecialchars($article['nom']) ?></td>
                             <td><?= $article['quantite'] ?></td>
                             <td><?= number_format($article['prix'], 2) ?> €</td>

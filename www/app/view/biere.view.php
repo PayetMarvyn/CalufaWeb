@@ -6,7 +6,7 @@
         <div class="texte">
             <div class="infos_biere">
                 <h2 class="nom_biere"><?= $biere['nom'] ?></h2>
-                <h2 class="prix_biere"><?= $biere['prix'] ?>€</h2>
+                <h2 class="prix_biere"><?= $biere['prix'] ?></h2>
                 <p>75cl</p>
                 <h3>Description</h3>
                 <p class="desc_biere"><?= $biere['description'] ?></p>
@@ -21,7 +21,13 @@
                     <h3 id="quantite_panier">1</h3>
                     <button id="panier_plus" class="btn_panier" type="button">+</button>
                 </div>
-                <button id="btn_ajout_panier" type="button">Ajouter au panier</button>
+                <form method="POST" action="index.php?route=ajouter_panier" onsubmit="showToast();">
+                    <input type="hidden" name="id" value="<?= htmlspecialchars($biere['id_biere']) ?>">
+                    <input type="hidden" name="nom" value="<?= htmlspecialchars($biere['nom']) ?>">
+                    <input type="hidden" name="prix" value="<?= htmlspecialchars($biere['prix']) ?>">
+                    <input type="hidden" name="image" value="<?= htmlspecialchars($biere['image_url']) ?>">
+                    <button id="btn_ajout_panier" type="submit">Ajouter au panier</button>
+                </form>
             </div>
         </div>
     </section>

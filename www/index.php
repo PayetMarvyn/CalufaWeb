@@ -86,7 +86,15 @@ switch ($route) {
         generatePanierPage();
         break;
 
-    case 'ajouter_panier': //Initialisation du panier par la session ou lieu de local
+    case 'ajouter_panier':
+        // Redirige directement à la page 404 si accédé par l'URL
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('app/controller/page404.controller.php');
+            generatePageNonTrouvable();
+            exit();
+        }
+
+        // Initialisation du panier dans la session
         if (!isset($_SESSION['panier'])) {
             $_SESSION['panier'] = [];
         }
@@ -116,6 +124,10 @@ switch ($route) {
             ];
         }
 
+        // Ajout du message toast à la session
+        $_SESSION['toast'] = "Produit ajouté au panier !";
+
+        // Redirection vers la page catalogue
         header('Location: index.php?route=catalogue');
         exit();
 

@@ -1,4 +1,14 @@
+<?php if (!empty($_SESSION['toast'])): ?>
+    <div id="toast"><?= $_SESSION['toast'] ?></div>
+    <?php unset($_SESSION['toast']); ?>
+<?php endif; ?>
+
+
 <main>
+    <div id="toast" class="toast-hidden">
+        🛒 Produit ajouté au panier !
+    </div>
+
     <section class="catalogue">
         <?php foreach ($bieres as $biere): ?>
             <div class="catalogue-carte">
@@ -10,8 +20,8 @@
                 </a>
                 <div class="btn-panier">
                     <div>
-                        <form action="index.php?route=ajouter_panier" method="POST" value="ajouter">
-                            <input type="hidden" name="id" value="<?= $biere['id_biere'] ?>">
+                        <form method="POST" action="index.php?route=ajouter_panier" onsubmit="showToast();">
+                            <input type="hidden" name="id" value="<?= htmlspecialchars($biere['id_biere']) ?>">
                             <input type="hidden" name="nom" value="<?= htmlspecialchars($biere['nom']) ?>">
                             <input type="hidden" name="prix" value="<?= htmlspecialchars($biere['prix']) ?>">
                             <input type="hidden" name="image" value="<?= htmlspecialchars($biere['image_url']) ?>">
