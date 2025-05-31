@@ -50,10 +50,66 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .verif-age img {
   max-width: 30%;
   height: auto;
   border-radius: 8px;
+}
+
+/* Responsive tablette (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .verif-age {
+    margin: 8vh 2em;
+    padding: 1.5em;
+    max-width: 90%;
+  }
+
+  .verif-age h1 {
+    font-size: 1.8em;
+  }
+
+  .verif-age h2 {
+    font-size: 1.2em;
+  }
+
+  .verif-age img {
+    max-width: 50%;
+  }
+
+  .verif-age button {
+    width: 45%;
+    font-size: 1em;
+  }
+}
+
+/* Responsive mobile (max-width: 425px) */
+@media screen and (max-width: 425px) {
+  .verif-age {
+    margin: 6vh 1em;
+    padding: 1em;
+    max-width: 100%;
+  }
+
+  .verif-age h1 {
+    font-size: 1.5em;
+  }
+
+  .verif-age h2 {
+    font-size: 1em;
+  }
+
+  .verif-age img {
+    max-width: 70%;
+  }
+
+  .verif-age button {
+    width: 100%;
+    margin: 0.5em 0;
+    font-size: 1em;
+  }
 }

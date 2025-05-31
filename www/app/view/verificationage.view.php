@@ -14,15 +14,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
-<script src="../../../public/js/fonctionalites.js"></script>
-
 <body>
-
   <main>
     <section class="verif-age">
       <h1>Bienvenue chez CALUFA 🍻</h1>
       <img src="/public/images/logo_calufa.png" alt="Logo Calufa" class="logo-calufa">
-      <h2>Ce site est réservé aux personnes majeures</h1>
+      <h2>Ce site est réservé aux personnes majeures</h2>
         <p>Avez-vous plus de 18 ans ?</p>
         <form method="POST" action="index.php?route=verificationage">
           <button type="submit" name="accepte_age" value="oui">Oui, j'ai plus de 18 ans</button>
@@ -30,6 +27,9 @@
         </form>
     </section>
   </main>
+
+  <script src="/public/js/fonctionalites.js"></script>
+
 </body>
 
 </html>
