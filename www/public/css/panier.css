@@ -1,40 +1,47 @@
-  .panier {
-    padding: 4em;
-    color: white;
-  }
+.panier-tableau {
+  background-color: #ffd278;
+  border: solid #e73c3c 5px;
+  border-radius: 14px;
+  padding: 0 0 1em;
+}
 
-  .panier-carte {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(255, 248, 230, 0.1);
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 20px;
-  }
+.panier-tableau thead {
+  background-color: #fd5b1e;
+}
 
-  .panier-carte img {
-    height: 5em;
-  }
+.panier-tableau thead tr {
+  color: #fff9d8;
+}
 
-  .panier-info {
-    flex: 1;
-    margin: 0 1em;
-  }
+.panier-tableau thead tr th {
+  padding: 1em;
+}
 
-  .panier-quantite input {
-    width: 50px;
-    text-align: center;
-  }
+.panier-tableau tbody img {
+  width: 40%;
+}
+.panier-tableau tbody tr td {
+  padding: 1em 4em 0;
+}
 
-  .panier-quantite button {
-    margin: 0 0.5em;
+.passer-commande {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
     font-weight: bold;
+    font-size: 0.9em;
+    color: #fff;
     cursor: pointer;
-  }
+    background: linear-gradient(to right, #ffcb05, #ff8800);
+    text-decoration: none;
+    transition: transform 0.2s;
+}
 
-  .panier-total {
-    text-align: right;
-    font-size: 1.5em;
-    margin-top: 2em;
-  }
+
+.passer-commande:hover {
+    transform: scale(1.05);
+    background: linear-gradient(270deg, #A4D4AE, #E07A5F, #F4D35E, #E5989B, #d2e3cc, #96cca1);
+    background-size: 1200% 100%;
+    animation: rainbow-gradient 6s linear infinite;
+    color: #464646;
+}

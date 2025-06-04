@@ -19,6 +19,11 @@ header.shrink {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
+header.shrink a:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 0.1em;
+}
+
 header ul li img {
     width: 5em;
 }

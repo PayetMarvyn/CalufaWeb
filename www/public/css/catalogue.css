@@ -20,11 +20,12 @@
     width: 25%;
     margin: 1%;
     border-radius: 7%;
-    border:  rgb(3, 89, 201) ;
+    border: rgb(3, 89, 201);
 }
+
 .catalogue h1 a {
     text-decoration: none;
-    color:  rgb(3, 89, 201) ;
+    color: rgb(3, 89, 201);
 }
 
 .catalogue a {
@@ -37,18 +38,38 @@
 
 .catalogue-carte:hover {
     border: rgb(3, 89, 201) solid;
+    border-radius: 40px;
+    transition: 0.1s;
 }
 
-.btn-panier {
+
+.btns-panier {
     display: flex;
     gap: 10px;
 }
 
+.btn-ajouter {
+    border-radius: 30px;
+    font-size: 0.9em;
+    border: 4px solid #ffe898;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    background-color: #E07A5F;
+    color: white;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.btn-ajouter:hover {
+    transform: scale(1.03);
+    background-color: #ffe898;
+    border-color: #E07A5F;
+    color: #464646;
+    transition: 0.2s;
+}
 
 
-
-.btn-panier button {
-    display: inline-block;
+.btn-acheter {
     padding: 1rem 2rem;
     border: none;
     border-radius: 30px;
@@ -59,15 +80,23 @@
     background: linear-gradient(to right, #ffcb05, #ff8800);
     text-decoration: none;
     transition: transform 0.2s;
-    position: relative;
-    overflow: hidden;
 }
 
 
-.btn-panier button:hover {
+.btn-acheter:hover {
     transform: scale(1.05);
     background: linear-gradient(270deg, #A4D4AE, #E07A5F, #F4D35E, #E5989B, #d2e3cc, #96cca1);
     background-size: 1200% 100%;
     animation: rainbow-gradient 6s linear infinite;
     color: #464646;
+}
+
+@keyframes rainbow-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }

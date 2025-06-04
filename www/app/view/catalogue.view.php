@@ -18,18 +18,18 @@
                     <h2><?= htmlspecialchars($biere['prix']) ?></h2>
                     <p><?= htmlspecialchars($biere['description']) ?></p>
                 </a>
-                <div class="btn-panier">
+                <div class="btns-panier">
                     <div>
                         <form method="POST" action="index.php?route=ajouter_panier" onsubmit="showToast();">
                             <input type="hidden" name="id" value="<?= htmlspecialchars($biere['id_biere']) ?>">
                             <input type="hidden" name="nom" value="<?= htmlspecialchars($biere['nom']) ?>">
                             <input type="hidden" name="prix" value="<?= htmlspecialchars($biere['prix']) ?>">
                             <input type="hidden" name="image" value="<?= htmlspecialchars($biere['image_url']) ?>">
-                            <button type="submit">Ajouter au panier</button>
+                            <button class="btn-ajouter" type="submit">Ajouter au panier</button>
                         </form>
                     </div>
                     <div>
-                        <button class="btn btn-secondary" value="acheter">Acheter</button>
+                        <button class="btn-acheter" value="acheter">Acheter</button>
                     </div>
                 </div>
             </div>

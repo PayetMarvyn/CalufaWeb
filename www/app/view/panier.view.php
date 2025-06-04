@@ -5,7 +5,7 @@
         <?php if (empty($panier)): ?>
             <p>Votre panier est vide.</p>
         <?php else: ?>
-            <table>
+            <table class="panier-tableau">
                 <thead>
                     <tr>
                         <th>Image</th>
@@ -19,7 +19,7 @@
                     <?php $total = 0; ?>
                     <?php foreach ($panier as $article): ?>
                         <tr>
-                            <td><img src="public/images/<?= htmlspecialchars($article['image']) ?>" alt="<?= htmlspecialchars($article['nom']) ?>" style="width: 50px;"></td>
+                            <td><img src="public/images/<?= htmlspecialchars($article['image']) ?>" alt="<?= htmlspecialchars($article['nom']) ?>"></td>
                             <td><?= htmlspecialchars($article['nom']) ?></td>
                             <td><?= $article['quantite'] ?></td>
                             <td><?= number_format($article['prix'], 2) ?> €</td>
@@ -36,6 +36,9 @@
                 </tfoot>
             </table>
         <?php endif; ?>
+        <br>
+        <br>
+        <button class="passer-commande" onclick="window.location.href='index.php?action=validerPanier'">Passer la commande</button>
 
     </section>
 </main>

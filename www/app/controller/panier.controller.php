@@ -12,6 +12,7 @@ function generatePanierPage() {
         'page_title' => "Panier | CALUFA",
         'view' => 'app/view/panier.view.php',
         'layout' => 'app/view/common/layout.php',
+        'pageSpecificCss' => 'panier.css',
         'panier' => $_SESSION['panier'] ?? []
     ];
 
