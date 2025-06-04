@@ -20,7 +20,6 @@
 
         <section class=trombinoscope>
 
-
             <?php foreach ($equipe as $membre): ?>
                 <?php if ($membre['id_personne'] < 6) continue; ?>
                 <div class="carte">
@@ -29,8 +28,8 @@
                     <p><?= $membre['description'] ?></p>
                 </div>
             <?php endforeach; ?>
-            
-        <section class="coulisse">
-            <iframe style="border-radius: 20px;" width="738" height="415" src="https://www.youtube.com/embed/xTK60ihtHM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+
+            <section class="coulisse">
+                <iframe style="border-radius: 20px;" width="738" height="415" src="https://www.youtube.com/embed/xTK60ihtHM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
 </main>
