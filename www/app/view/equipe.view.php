@@ -29,6 +29,9 @@
                 </div>
             <?php endforeach; ?>
         </section>
+        <section class="jorge_dab">
+            <img src="../../public/images/jorge_dab.png" alt="Jorge la grenouille fait un dab">
+        </section>
 
         <section class="coulisse">
             <iframe style="border-radius: 20px;" width="736" height="415" src="https://www.youtube.com/embed/xTK60ihtHM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
