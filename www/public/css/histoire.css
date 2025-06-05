@@ -1,8 +1,45 @@
 /*Page Histoire Tracy */
 .presentation_jorge {
     display: flex;
+    padding: 100px;
+}
+
+.presentation_biere {
+    display: flex;
+    padding: 100px;
+    justify-content: flex-end;
 }
 
 .img_jorge img{
-    width: 200px;
+    height: 450px;
+}
+
+.bulle1 {
+    background-image: url(../images/bulle1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+}
+
+.contenu_bulle1 {
+    width: 450px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 115px 90px;
+}
+
+.bulle2 {
+    background-image: url(../images/bulle2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+}
+
+.contenu_bulle2 {
+    width: 450px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 95px 62px;
 }

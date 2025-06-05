@@ -36,9 +36,6 @@
         <h2>Noter notre produit</h2>
         <ul class="form_avis">
             <li>
-                <input type="range" min="1" max="5" id="star_rating">
-            </li>
-            <li>
                 <input type="text" id="texte_avis" placeholder="Laisser un avis...">
             </li>
             <li>
