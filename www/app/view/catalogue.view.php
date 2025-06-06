@@ -15,7 +15,7 @@
                 <a href="index.php?route=biere&id=<?= $biere['id_biere'] ?>">
                     <img src="<?= '../../../public/images/' . htmlspecialchars($biere['image_url']) ?>" alt="Bière <?= $biere['id_biere'] ?>">
                     <h2><?= htmlspecialchars($biere['nom']) ?></h2>
-                    <h2><?= htmlspecialchars($biere['prix']) ?></h2>
+                    <h2><?= htmlspecialchars($biere['prix']) ?> €</h2>
                     <p><?= htmlspecialchars($biere['description']) ?></p>
                 </a>
                 <div class="btns-panier">
