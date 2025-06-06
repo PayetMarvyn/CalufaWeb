@@ -6,7 +6,7 @@
         <div class="texte">
             <div class="infos_biere">
                 <h2 class="nom_biere"><?= $biere['nom'] ?></h2>
-                <h2 class="prix_biere"><?= $biere['prix'] ?> €</h2>
+                <h2 class="prix_biere"><?= $biere['prix'] ?></h2>
                 <p>75cl</p>
                 <h3>Description</h3>
                 <p class="desc_biere"><?= $biere['description'] ?></p>
