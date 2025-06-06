@@ -1,4 +1,4 @@
-<main>
+<main >
     <h1 style="color: white; margin: 0.5em 0 0 0">L'histoire de Calufa</h1>
     <section class="presentation_jorge">
         <figure class="img_jorge">
@@ -34,7 +34,7 @@
                     de l'Amérique latine.
                 </p> 
                 <p>
-                    Pina Colada de Porto Rico, le Fresay Coco de République Dominicaine, 
+                    La Piña Colada de Porto Rico, le Fresay Coco de République Dominicaine, 
                     l'Ipanema du Brésil, le Chiliguaro du Costa Rica, le Tepache du Mexique 
                     et le Mojito de Cuba.
                 </p>
