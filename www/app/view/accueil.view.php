@@ -1,7 +1,7 @@
 <section class="carrousel">
 
-    <?php foreach ($bieres as $index => $biere): ?>
-        <div class="carrousel-carte" data-index="<?= $index ?>">
+    <?php foreach ($bieres as $biere): ?>
+        <div class="carrousel-carte">
             <div class="carrousel-contenu">
                 <div class="carrousel-image">
                     <a href="index.php?route=biere&id=<?= htmlspecialchars($biere['id_biere']) ?>">
