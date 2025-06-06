@@ -1,7 +1,10 @@
 /*fabrication Neemati*/
 
 body {
-   background-image: url(../images/fond_page_fabrication.png);
+    background-image: url(../images/fondplage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;  
 }
 
 #Etape {

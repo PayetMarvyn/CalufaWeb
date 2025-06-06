@@ -2,6 +2,7 @@
 
 require_once 'app/controller/controller.php';
 
+// Génère la page de vérification d'âge
 function generateVerificationAgePage() {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($_POST['accepte_age']) && $_POST['accepte_age'] === 'oui') {
@@ -32,4 +33,28 @@ function generateVerificationAgePage() {
     ];
 
     generatePage($data);
+}
+
+// Vérifie si l'âge de l'utilisateur a été vérifié
+function verifyAge() {
+    $route = $_GET['route'] ?? 'accueil';
+
+    $pages_sans_verif_age = ['verificationage'];
+
+    if (empty($_SESSION['age_verifie']) && !in_array($route, $pages_sans_verif_age)) {
+        $_SESSION['redirect_after_age'] = "index.php?route=" . $route;
+
+        $params = [];
+        foreach ($_GET as $key => $value) {
+            if ($key !== 'route') {
+                $params[] = urlencode($key) . '=' . urlencode($value);
+            }
+        }
+        if (!empty($params)) {
+            $_SESSION['redirect_after_age'] .= '&' . implode('&', $params);
+        }
+
+        header('Location: index.php?route=verificationage');
+        exit();
+    }
 }

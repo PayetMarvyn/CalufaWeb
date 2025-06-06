@@ -1,5 +1,5 @@
 <main>
-    <h1>L'histoire de Calufa</h1>
+    <h1 style="color: white; margin: 0.5em 0 0 0">L'histoire de Calufa</h1>
     <section class="presentation_jorge">
         <figure class="img_jorge">
             <img src="../../public/images/jorge_debout.png">
