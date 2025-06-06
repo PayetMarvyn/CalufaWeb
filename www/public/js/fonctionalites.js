@@ -172,3 +172,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 4000);
     }
 });
+
+// Quantité modifiable du panier
+document.addEventListener('DOMContentLoaded', function() {
+    const btnPlus = document.getElementById('panier_plus');
+    const btnMoins = document.getElementById('panier_moins');
+    const quantiteAffichee = document.getElementById('quantite_panier');
+    const inputQuantite = document.getElementById('input_quantite');
+
+    btnPlus.addEventListener('click', function() {
+        let quantite = parseInt(quantiteAffichee.textContent);
+        if (quantite < 5) {
+            quantite++;
+            quantiteAffichee.textContent = quantite;
+            inputQuantite.value = quantite;
+        }
+    });
+
+    btnMoins.addEventListener('click', function() {
+        let quantite = parseInt(quantiteAffichee.textContent);
+        if (quantite > 1) {
+            quantite--;
+            quantiteAffichee.textContent = quantite;
+            inputQuantite.value = quantite;
+        }
+    });
+});

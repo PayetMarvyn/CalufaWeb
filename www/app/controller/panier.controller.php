@@ -21,6 +21,7 @@ function generatePanierPage() {
  * Ajoute un produit au panier
  */
 function ajouterAuPanier() {
+
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         require_once('app/controller/page404.controller.php');
         generatePageNonTrouvable();
@@ -35,30 +36,34 @@ function ajouterAuPanier() {
     $nom = $_POST['nom'];
     $prix = (float) $_POST['prix'];
     $image = $_POST['image'];
+    $quantite = (int) $_POST['quantite'];
 
-    // Vérifie si l'article est déjà présent
-    $trouvé = false;
+    // S'assurer que la quantité est entre 1 et 5
+    if ($quantite < 1) $quantite = 1;
+    if ($quantite > 5) $quantite = 5;
+
+    $trouve = false;
     foreach ($_SESSION['panier'] as &$article) {
         if ($article['id'] == $id) {
-            $article['quantite']++;
-            $trouvé = true;
+            // Remplace la quantité par la nouvelle quantité sélectionnée
+            $article['quantite'] = $quantite;
+            $trouve = true;
             break;
         }
     }
 
-    if (!$trouvé) {
+    if (!$trouve) {
         $_SESSION['panier'][] = [
             'id' => $id,
             'nom' => $nom,
             'prix' => $prix,
             'image' => $image,
-            'quantite' => 1
+            'quantite' => $quantite
         ];
     }
 
     $_SESSION['toast'] = "Produit ajouté au panier !";
 
-    // Redirection vers la page d'origine
     $redirectUrl = $_POST['redirect_url'] ?? 'index.php?route=catalogue';
     header('Location: ' . $redirectUrl);
     exit();

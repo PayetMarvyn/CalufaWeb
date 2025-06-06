@@ -21,20 +21,19 @@
                     <h3 id="quantite_panier">1</h3>
                     <button id="panier_plus" class="btn_panier" type="button">+</button>
                 </div>
-                <form action="index.php?route=ajouter_panier" method="post">
+                <form action="index.php?route=ajouter_panier" method="post" id="form-ajout-panier">
                     <input type="hidden" name="id" value="<?= $biere['id_biere'] ?>">
                     <input type="hidden" name="nom" value="<?= $biere['nom'] ?>">
                     <input type="hidden" name="prix" value="<?= $biere['prix'] ?>">
                     <input type="hidden" name="image" value="<?= $biere['image_url'] ?>">
+                    <input type="hidden" name="quantite" id="input_quantite" value="1">
 
-                    <!-- 👇 Lien de retour dynamique -->
                     <input type="hidden" name="redirect_url" value="<?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
 
                     <button id="btn_ajout_panier" type="submit">Ajouter au panier</button>
                 </form>
-
             </div>
-        </div>
+
     </section>
 
     <section class="avis">
