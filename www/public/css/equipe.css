@@ -1,5 +1,16 @@
-/*Trombinoscope */
+body {
+    background-image: url(../images/fondplage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
 
+h2,
+h1 {
+    color: white;
+}
+
+/*Trombinoscope */
 .trombinoscope {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +25,7 @@
     border-radius: 10px;
     width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
 }
 
 .carte img {
@@ -26,7 +38,166 @@
     font-weight: bold;
 }
 
-.jorge_dab img{
-    width: 500px;
-    padding: 50px;
+.jorge_dab img {
+    width: 30%;
+    padding: 0 2em 2em;
+}
+
+.carte:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    border: 3px solid transparent;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(90deg, blue, violet, pink, orange, rgb(255, 40, 40)) border-box;
+}
+
+@media screen and (max-width: 768px) {
+    section h1 {
+        font-size: 2em;
+    }
+
+    header {
+        font-size: 1.2em;
+        padding: 0.5em 0.5em 0.5em 0em;
+    }
+
+    header ul li img {
+        width: 3em;
+    }
+
+    nav ul {
+        padding: 1em;
+
+    }
+
+    nav ul li {
+        margin: 0.3em 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.4em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.5em;
+    }
+
+    .apropos {
+        text-align: center;
+    }
+
+    .trombinoscope {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .carte {
+        width: 120px;
+        padding: 10px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .jorge_dab img {
+        width: 50%;
+        display: block;
+        margin: 0 auto 1.5em;
+    }
+
+    .coulisse iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        font-size: 1em;
+        padding: 0.3em 0.3em 0.3em 0em;
+    }
+
+    header ul li img {
+        width: 2.5em;
+    }
+
+    nav ul {
+        padding: 0.5em;
+    }
+
+    nav ul li {
+        margin: 0.2em 0;
+    }
+
+    footer {
+        padding: 1.5em 0.5em;
+        gap: 0.7em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.2em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.3em;
+        width: 1.8em;
+        /* possible ajustement */
+    }
+
+    .apropos {
+        font-size: 0.9em;
+        padding: 0 1em;
+    }
+
+    .trombinoscope {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carte {
+        width: 80%;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .jorge_dab img {
+        width: 70%;
+    }
+
+    .coulisse iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
 }

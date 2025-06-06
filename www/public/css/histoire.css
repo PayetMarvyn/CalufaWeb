@@ -10,7 +10,7 @@
     justify-content: flex-end;
 }
 
-.img_jorge img{
+.img_jorge img {
     height: 450px;
 }
 
@@ -42,4 +42,177 @@
     font-size: 20px;
     font-weight: bold;
     padding: 95px 62px;
+}
+
+body {
+    background-image: url(../images/fondjorge.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h2,
+h1 {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    section h1 {
+        font-size: 2em;
+    }
+
+    header {
+        font-size: 1.2em;
+        padding: 0.5em 0.5em 0.5em 0em;
+    }
+
+    header ul li img {
+        width: 3em;
+    }
+
+    nav ul {
+        padding: 1em;
+
+    }
+
+    nav ul li {
+        margin: 0.3em 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.4em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.5em;
+    }
+
+    .apropos {
+        text-align: center;
+    }
+
+    .contenu_bulle1 {
+        font-size: 0.5em;
+    }
+
+    .presentation_jorge,
+    .presentation_biere {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .img_jorge img {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .bulle1,
+    .bulle2 {
+        width: 500px;
+        height: 500px;
+        background-size: contain;
+    }
+
+    .contenu_bulle1,
+    .contenu_bulle2 {
+        width: 360px;
+        font-size: 18px;
+        padding: 80px 70px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        font-size: 1em;
+        padding: 0.3em 0.3em 0.3em 0em;
+    }
+
+    header ul li img {
+        width: 2.5em;
+        /* plus petit */
+    }
+
+    nav ul {
+        padding: 0.5em;
+    }
+
+    nav ul li {
+        margin: 0.2em 0;
+    }
+
+    footer {
+        padding: 1.5em 0.5em;
+        gap: 0.7em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.2em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.3em;
+        width: 1.8em;
+        /* possible ajustement */
+    }
+
+    .apropos {
+        font-size: 0.9em;
+        padding: 0 1em;
+    }
+
+    .presentation_jorge,
+    .presentation_biere {
+        padding: 30px;
+    }
+
+    .img_jorge img {
+        height: 250px;
+    }
+
+    .bulle1,
+    .bulle2 {
+        width: 100%;
+        max-width: 350px;
+        height: 350px;
+    }
+
+    .contenu_bulle1,
+    .contenu_bulle2 {
+        width: 250px;
+        font-size: 16px;
+        padding: 60px 50px;
+    }
+
+    .bulle1 {
+        width: 600px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0 10px;
+    }
 }

@@ -1,42 +1,56 @@
 /*fabrication Neemati*/
 
 body {
-   background-image: url(../images/fond_page_fabrication.png);
+    background-image: url(../images/fondplage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;  
 }
 
 #Etape {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    gap: 1em;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.29);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    background-color:rgba(252, 179, 71, 0.6);
     border-radius: 20px;
-    
+    padding: 2em;
+    margin: 2em;
+    align-items: start;
+}
+
+#Etape figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
 }
 
 #Etape figure img {
-    width: 300px;
-    border: 10px;
-    text-align: center;
-    align-items: center;
+    width: 220px;
     border-radius: 12px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.614);
-
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
 }
 
-#Etape div:hover {
-    transform: scale(1.02);
-}
 
-#Etape p {
-    font-size: 1.3em;
-   
+#Etape figure img:hover {
+    transform: scale(1.05);
 }
 
 #Introduction p {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    background-color: rgba(252, 179, 71, 0.6);
+    border-radius: 12px;
+    margin: 1.5em auto;
+    max-width: 80%;
 }
 
+
 h3 {
-font-size: 2.0em;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+    color: #222;
 }

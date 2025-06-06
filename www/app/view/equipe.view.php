@@ -30,6 +30,7 @@
             <?php endforeach; ?>
         </section>
         <section class="jorge_dab">
+            <h2>Jorge la grenouille</h2>
             <img src="../../public/images/jorge_dab.png" alt="Jorge la grenouille fait un dab">
         </section>
 
