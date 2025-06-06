@@ -1,9 +1,9 @@
 <main class="panier">
-    <section>
+    <section class="conteneur-panier">
         <h1>Votre panier</h1>
 
         <?php if (empty($panier)): ?>
-            <p>Votre panier est vide.</p>
+            <p class="panier-vide">Votre panier est vide.</p>
         <?php else: ?>
             <table class="panier-tableau">
                 <thead>
@@ -19,7 +19,7 @@
                     <?php $total = 0; ?>
                     <?php foreach ($panier as $article): ?>
                         <tr>
-                            <td><img src="public/images/<?= htmlspecialchars($article['image']) ?>" alt="<?= htmlspecialchars($article['nom']) ?>"></td>
+                            <td><img class="image-produit" src="public/images/<?= htmlspecialchars($article['image']) ?>" alt="<?= htmlspecialchars($article['nom']) ?>"></td>
                             <td><?= htmlspecialchars($article['nom']) ?></td>
                             <td><?= $article['quantite'] ?></td>
                             <td><?= number_format($article['prix'], 2) ?> €</td>
@@ -30,15 +30,16 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4"><strong>Total</strong></td>
+                        <td colspan="4"><strong>Total à payer</strong></td>
                         <td><strong><?= number_format($total, 2) ?> €</strong></td>
                     </tr>
                 </tfoot>
             </table>
-        <?php endif; ?>
-        <br>
-        <br>
-        <button class="passer-commande" onclick="window.location.href='index.php?action=validerPanier'">Passer la commande</button>
 
+            <div class="actions-panier">
+                <button class="btn-secondaire" onclick="window.location.href='index.php?action=catalogue'">Continuer vos achats</button>
+                <button class="btn-primaire" onclick="window.location.href='index.php?action=validerPanier'">Passer la commande</button>
+            </div>
+        <?php endif; ?>
     </section>
 </main>
