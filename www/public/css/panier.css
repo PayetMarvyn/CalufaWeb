@@ -1,47 +1,122 @@
+.panier {
+    padding: 13rem 2rem;
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+.conteneur-panier {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.panier h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #721F3C;
+    text-align: center;
+}
+
+.panier-vide {
+    font-size: 1.2rem;
+    color: #444;
+    text-align: center;
+}
+
 .panier-tableau {
-  background-color: #ffd278;
-  border: solid #e73c3c 5px;
-  border-radius: 14px;
-  padding: 0 0 1em;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 
-.panier-tableau thead {
-  background-color: #fd5b1e;
+.panier-tableau th,
+.panier-tableau td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
-.panier-tableau thead tr {
-  color: #fff9d8;
+.panier-tableau th {
+    background-color: #721F3C;
+    color: white;
+    font-weight: 600;
 }
 
-.panier-tableau thead tr th {
-  padding: 1em;
+.image-produit {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.panier-tableau tbody img {
-  width: 40%;
-}
-.panier-tableau tbody tr td {
-  padding: 1em 4em 0;
+.actions-panier {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.passer-commande {
-    padding: 1rem 2rem;
+.btn-primaire,
+.btn-secondaire {
+    padding: 1rem 1.5rem;
     border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 0.9em;
-    color: #fff;
+    border-radius: 8px;
     cursor: pointer;
-    background: linear-gradient(to right, #ffcb05, #ff8800);
-    text-decoration: none;
-    transition: transform 0.2s;
+    font-weight: bold;
+    transition: 0.3s ease;
+    font-size: 1rem;
 }
 
+.btn-primaire {
+    background-color: #721F3C;
+    color: white;
+}
 
-.passer-commande:hover {
-    transform: scale(1.05);
-    background: linear-gradient(270deg, #A4D4AE, #E07A5F, #F4D35E, #E5989B, #d2e3cc, #96cca1);
-    background-size: 1200% 100%;
-    animation: rainbow-gradient 6s linear infinite;
-    color: #464646;
+.btn-primaire:hover {
+    background-color: #941d4f;
+}
+
+.btn-secondaire {
+    background-color: transparent;
+    border: 2px solid #721F3C;
+    color: #721F3C;
+}
+
+.btn-secondaire:hover {
+    background-color: #f0e0e5;
+}
+
+@media screen and (max-width: 768px) {
+    .panier-tableau thead {
+        display: none;
+    }
+
+    .panier-tableau tr {
+        display: block;
+        margin-bottom: 1rem;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .panier-tableau td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .panier-tableau td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #721F3C;
+    }
+
+    .actions-panier {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }

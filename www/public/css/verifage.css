@@ -1,18 +1,40 @@
 /*Page verification d'âge */
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('../images/fondjorge.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+}
+
 .verif-age {
-  text-align: center;
   margin: 10vh auto;
   max-width: 600px;
   padding: 2em;
   background-color: #fdf3e7;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 .verif-age h1 {
   font-size: 2em;
-  color: #2a2a2a;
-  margin-bottom: 1em;
+  margin: 1em 0;
+}
+
+.verif-age h2 {
+  font-size: 1.8em;
+  margin: 1em 0;
 }
 
 .verif-age button {
@@ -41,27 +63,13 @@
 
 }
 
-main {
-  padding: 0em;
-}
-
-body {
-  background-image: url('../images/fondjorge.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-  margin: 0;
-}
-
 .verif-age img {
   max-width: 30%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Responsive tablette (max-width: 768px) */
+/* Vue tablette*/
 @media screen and (max-width: 768px) {
   .verif-age {
     margin: 8vh 2em;
@@ -74,11 +82,11 @@ body {
   }
 
   .verif-age h2 {
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
 
   .verif-age img {
-    max-width: 50%;
+    max-width: 30%;
   }
 
   .verif-age button {
@@ -87,7 +95,7 @@ body {
   }
 }
 
-/* Responsive mobile (max-width: 425px) */
+/* Vue telephone */
 @media screen and (max-width: 425px) {
   .verif-age {
     margin: 6vh 1em;
@@ -96,15 +104,15 @@ body {
   }
 
   .verif-age h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .verif-age h2 {
-    font-size: 1em;
+    font-size: 1.4em;
   }
 
   .verif-age img {
-    max-width: 70%;
+    max-width: 50%;
   }
 
   .verif-age button {
