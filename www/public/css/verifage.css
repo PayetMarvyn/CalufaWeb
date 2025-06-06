@@ -1,4 +1,4 @@
-/*Page verification d'âge */
+/*Page verification d'âge Safuan*/
 main {
   height: 100vh;
   display: flex;
@@ -69,7 +69,7 @@ body {
   border-radius: 8px;
 }
 
-/* Vue tablette*/
+/* Vue tablette */
 @media screen and (max-width: 768px) {
   .verif-age {
     margin: 8vh 2em;

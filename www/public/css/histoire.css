@@ -1,14 +1,17 @@
 /*Page Histoire Tracy */
 
+h1 {
+    margin: 1em 0 0.7em;
+}
 
 .presentation_jorge {
     display: flex;
-    padding: 100px;
+    justify-content: center;
 }
 
 .presentation_biere {
     display: flex;
-    padding: 100px;
+    padding: 1px;
     justify-content: flex-end;
 }
 
@@ -25,8 +28,8 @@
 }
 
 .contenu_bulle1 {
-    width: 450px;
-    font-size: 20px;
+    text-align: center;
+    font-size: 1.25em;
     font-weight: bold;
     padding: 115px 90px;
 }
@@ -150,7 +153,6 @@ h1 {
 
     header ul li img {
         width: 2.5em;
-        /* plus petit */
     }
 
     nav ul {
@@ -177,7 +179,6 @@ h1 {
     .reseaux-sociaux img {
         margin: 0 0.3em;
         width: 1.8em;
-        /* possible ajustement */
     }
 
     .apropos {

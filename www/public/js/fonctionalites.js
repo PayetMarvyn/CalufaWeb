@@ -1,5 +1,4 @@
-//Fonctionnelent du carrousel de la page d'accueil
-
+//Fonctionnement du carrousel de la page d'accueil
 document.addEventListener("DOMContentLoaded", function () {
     const cartes = document.querySelectorAll(".carrousel-carte");
     const prevBtn = document.getElementById("prevBtn");
@@ -165,7 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
             toast.classList.remove('show');
             toast.classList.add('hide');
 
-            // Optionnel : supprimer l'élément du DOM après l'animation
             setTimeout(() => {
                 toast.remove();
             }, 500); // attendre la fin de l'animation
@@ -173,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Quantité modifiable du panier
+// Pouvoir selectionner la quantité avant de l'ajouter au panier
 document.addEventListener('DOMContentLoaded', function() {
     const btnPlus = document.getElementById('panier_plus');
     const btnMoins = document.getElementById('panier_moins');

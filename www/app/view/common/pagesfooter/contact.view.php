@@ -53,7 +53,7 @@
 
         <section>
             <h2>📩 Formulaire de contact</h2>
-            <form action="[URL de traitement]" method="post" class="form-contact">
+            <form class="form-contact">
                 <label for="nom">Nom :</label>
                 <input type="text" id="nom" name="nom" maxlength="32" required><br><br>
 
@@ -63,11 +63,9 @@
                 <label for="message">Message :</label><br>
                 <textarea id="message" name="message" rows="5" maxlength="1000" required></textarea><br><br>
 
-                <button type="submit">Envoyer</button>
+                <button>Envoyer</button>
             </form>
 
         </section>
-
-        <script src="../../../public/js/fonctionalites.js"></script>
     </section>
 </main>

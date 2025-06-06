@@ -1,5 +1,4 @@
-
-/*Page 404 quand la page n'est pas trouvé */
+/*Page 404 quand la page n'est pas trouvé Safuan */
 .button404 {
     display: inline-block;
     padding: 1rem 2rem;
@@ -131,7 +130,7 @@ h2 {
     }
 }
 
-/* Responsive tel */
+/* Responsive telephone */
 @media screen and (max-width: 480px) {
     header {
         font-size: 1.2em;

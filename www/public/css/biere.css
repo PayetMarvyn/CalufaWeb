@@ -1,4 +1,4 @@
-/*Page biere Marvyn */
+/*Page biere Marvyn et Tracy */
 
 /*infos des bières*/
 
@@ -118,4 +118,189 @@
     background-color: #ffcc80;
     cursor: pointer;
     transform: scale(1.07);
+}
+
+/* Vue tablette*/
+@media screen and (max-width: 768px) {
+    
+    section h1 {
+        font-size: 2em;
+    }
+
+    header {
+        font-size: 1.2em;
+        padding: 0.5em 0.5em 0.5em 0em;
+    }
+
+    header ul li img {
+        width: 3em;
+    }
+
+    nav ul {
+        padding: 1em;
+
+    }
+
+    nav ul li {
+        margin: 0.3em 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.4em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.5em;
+    }
+
+    .apropos {
+        text-align: center;
+    }
+
+    .produit {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_biere img {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .infos_biere {
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .quantite_ajout {
+        margin-right: 15px;
+    }
+
+    .btn_panier {
+        font-size: 24px;
+        padding: 0px 10px;
+    }
+
+    .avis {
+        width: 95%;
+    }
+
+    .biere input[type="text"] {
+        width: 90%;
+    }
+}
+
+/* Vue telephone */
+@media screen and (max-width: 425px) {
+
+    
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        font-size: 1em;
+        padding: 0.3em 0.3em 0.3em 0em;
+    }
+
+    header ul li img {
+        width: 2.5em;
+        /* plus petit */
+    }
+
+    nav ul {
+        padding: 0.5em;
+    }
+
+    nav ul li {
+        margin: 0.2em 0;
+    }
+
+    footer {
+        padding: 1.5em 0.5em;
+        gap: 0.7em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.2em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.3em;
+        width: 1.8em;
+    }
+
+    .apropos {
+        font-size: 0.9em;
+        padding: 0 1em;
+    }
+
+    .produit {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .img_biere img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .infos_biere {
+        width: 95%;
+        text-align: center;
+    }
+
+    .ajout_panier {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .quantite_ajout {
+        margin: 10px 0;
+        width: 100px;
+        justify-content: center;
+    }
+
+    #btn_ajout_panier {
+        width: 80%;
+        font-size: 0.9em;
+    }
+
+    .btn_panier {
+        font-size: 24px;
+        padding: 0 8px;
+    }
+
+    .avis {
+        margin: 60px auto;
+        width: 95%;
+        text-align: center;
+    }
+
+    .biere input[type="text"] {
+        width: 100%;
+    }
+
+    #btn_avis {
+        width: 80%;
+        font-size: 0.9em;
+    }
 }

@@ -1,10 +1,13 @@
-/*fabrication Neemati*/
-
+/*Page fabrication Neemati*/
 body {
-    background-image: url(../images/fondplage.jpg);
+    background-image: url(../images/fondnewlestter.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;  
+    background-position: center;
+}
+
+h1, h2 {
+    color: white;
 }
 
 #Etape {
@@ -53,4 +56,149 @@ h3 {
     text-align: center;
     margin-top: 1em;
     color: #222;
+    margin: 1em 0 0.2em;
+}
+
+/* Responsive tablette */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.3em;
+    }
+
+    header {
+        font-size: 1.2em;
+        padding: 0.5em 0.5em 0.5em 0em;
+    }
+
+    header ul li img {
+        width: 3em;
+    }
+
+    nav ul {
+        padding: 1em;
+
+    }
+
+    nav ul li {
+        margin: 0.3em 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.4em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.5em;
+    }
+
+    .apropos {
+        text-align: center;
+    }
+
+    #Etape {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+        padding: 1.5em;
+        margin: 1.5em;
+    }
+
+    #Etape figure img {
+        width: 180px;
+    }
+
+    #Introduction p {
+        font-size: 1.1em;
+        padding: 1em 1.5em;
+        max-width: 90%;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+}
+
+/* Responsive téléphone */
+@media screen and (max-width: 425px) {
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        font-size: 1em;
+        padding: 0.3em 0.3em 0.3em 0em;
+    }
+
+    header ul li img {
+        width: 2.5em;
+    }
+
+    nav ul {
+        padding: 0.5em;
+    }
+
+    nav ul li {
+        margin: 0.2em 0;
+    }
+
+    footer {
+        padding: 1.5em 0.5em;
+        gap: 0.7em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.2em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.3em;
+        width: 1.8em;
+    }
+
+    .apropos {
+        font-size: 0.9em;
+        padding: 0 1em;
+    }
+
+    #Etape {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    #Etape figure img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    #Introduction p {
+        font-size: 1em;
+        padding: 0.8em 1em;
+        max-width: 95%;
+    }
+
+    h1, h2 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
 }

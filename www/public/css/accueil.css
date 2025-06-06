@@ -197,7 +197,7 @@ section {
 
 .histoire p {
   margin-bottom: 2em;
-  background-color: #c39c718f;
+  background-color: #c39c71b3;
   width: 60%;
   border-radius: 20px;
   padding: 0.5em;
@@ -298,7 +298,7 @@ section {
 
 
 
-/*Responsive Tablet*/
+/*Vue tablette*/
 @media screen and (max-width: 768px) {
 
   section h1 {
@@ -393,10 +393,9 @@ section {
 
   /* Histoire */
   .histoire {
-    background-position: center;
+
     background-size: cover;
     padding: 2em 1em;
-    text-align: center;
   }
 
   /* Pub */
@@ -451,7 +450,7 @@ section {
   }
 }
 
-/*Responsive telephone */
+/*Vue telephone */
 @media screen and (max-width: 425px) {
 
   section h1 {
@@ -465,7 +464,6 @@ section {
 
   header ul li img {
     width: 2.5em;
-    /* plus petit */
   }
 
   nav ul {
@@ -492,7 +490,6 @@ section {
   .reseaux-sociaux img {
     margin: 0 0.3em;
     width: 1.8em;
-    /* possible ajustement */
   }
 
   .apropos {

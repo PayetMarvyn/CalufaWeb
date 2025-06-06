@@ -42,6 +42,5 @@
             <h2>7. Droit applicable</h2>
             <p>Les présentes mentions légales sont régies par le droit français. En cas de litige, les tribunaux compétents seront ceux de <strong>Créteil</strong>.</p>
         </section>
-        <script src="../../../public/js/fonctionalites.js"></script>
     </section>
 </main>

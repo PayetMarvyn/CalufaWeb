@@ -1,4 +1,4 @@
-/*Catalogue Nos bieres */
+/*Page du Catalogue Nos bieres Marvyn */
 .catalogue {
     display: flex;
     flex-wrap: wrap;
@@ -98,5 +98,154 @@
 
     100% {
         background-position: 100% 50%;
+    }
+}
+
+/* Vue tablette */
+@media screen and (max-width: 768px) {
+    section h1 {
+        font-size: 2em;
+    }
+
+    header {
+        font-size: 1.2em;
+        padding: 0.5em 0.5em 0.5em 0em;
+    }
+
+    header ul li img {
+        width: 3em;
+    }
+
+    nav ul {
+        padding: 1em;
+
+    }
+
+    nav ul li {
+        margin: 0.3em 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.4em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.5em;
+    }
+
+    .apropos {
+        text-align: center;
+    }
+
+    main {
+        padding: 12em 1em 0;
+    }
+
+    .catalogue-carte {
+        width: 40%; 
+        margin: 0;
+    }
+
+    .btns-panier {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .btn-ajouter,
+    .btn-acheter {
+        width: 100%;
+        padding: 0.7rem 1.5rem;
+        font-size: 0.85em;
+    }
+
+    .catalogue img {
+        width: 100%;
+    }
+}
+
+/* Vue telephone */
+@media screen and (max-width: 425px) {
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        font-size: 1em;
+        padding: 0.3em 0.3em 0.3em 0em;
+    }
+
+    header ul li img {
+        width: 2.5em;
+    }
+
+    nav ul {
+        padding: 0.5em;
+    }
+
+    nav ul li {
+        margin: 0.2em 0;
+    }
+
+    footer {
+        padding: 1.5em 0.5em;
+        gap: 0.7em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.2em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.3em;
+        width: 1.8em;
+    }
+
+    .apropos {
+        font-size: 0.9em;
+        padding: 0 1em;
+    }
+
+    .catalogue-carte {
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .catalogue {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btns-panier {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .btn-ajouter,
+    .btn-acheter {
+        width: 100%;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85em;
+    }
+
+    .catalogue h2, .catalogue p {
+        text-align: center;
     }
 }

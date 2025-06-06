@@ -1,8 +1,8 @@
+<!-- Notification d'ajout -->
 <?php if (!empty($_SESSION['toast'])): ?>
     <div id="toast"><?= $_SESSION['toast'] ?></div>
     <?php unset($_SESSION['toast']); ?>
 <?php endif; ?>
-
 
 <main>
     <div id="toast" class="toast-hidden">
@@ -34,7 +34,7 @@
 
                     </div>
                     <div>
-                        <button class="btn-acheter" value="acheter">Acheter</button>
+                        <a href="index.php?route=biere&id=<?= $biere['id_biere'] ?>"><button class="btn-acheter" value="acheter">Détails</button></a>
                     </div>
                 </div>
             </div>

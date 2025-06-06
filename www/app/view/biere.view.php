@@ -1,3 +1,9 @@
+<!-- Notification d'ajout -->
+<?php if (!empty($_SESSION['toast'])): ?>
+    <div id="toast"><?= $_SESSION['toast'] ?></div>
+    <?php unset($_SESSION['toast']); ?>
+<?php endif; ?>
+
 <main class="biere">
     <section class="produit">
         <figure class="img_biere">
@@ -37,7 +43,7 @@
     </section>
 
     <section class="avis">
-        <h2>Noter notre produit</h2>
+        <h2>⭐ Noter notre produit</h2>
         <ul class="form_avis">
             <li>
                 <input type="text" id="texte_avis" placeholder="Laisser un avis...">

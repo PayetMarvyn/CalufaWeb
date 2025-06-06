@@ -24,7 +24,8 @@
 
             <h3>Le maltage</h3>
             <figure>
-                <p>Étape clé : on fait germer l’orge pour transformer l’amidon en sucres fermentescibles.</p>
+                <p>Étape clé : on fait germer l’orge pour transformer<br>
+                 l’amidon en sucres fermentescibles.</p>
                 <img src="../public/images/malt.png">
             </figure>
 

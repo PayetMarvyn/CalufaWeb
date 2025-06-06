@@ -1,4 +1,4 @@
-/* Fourmulaire contact */
+/* Formulaire contact Safuan */
 .form-contact {
     width: 50%;
     margin: auto;
@@ -51,8 +51,48 @@
     background-color: #005bb5;
 }
 
-/* Pages mentions contact faq*/
+/* Section page footer */
 .pagefooter section {
     text-align: left;
-    margin: 0 4em 0 4em;
+    margin: 0 4em;
+}
+
+
+/* Vue tablette */
+@media screen and (max-width: 768px) {
+    .form-contact {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .form-contact button {
+        width: 50%;
+    }
+
+    .pagefooter section {
+        margin: 0 2em;
+    }
+}
+
+/* Vue telephone */
+@media screen and (max-width: 425px) {
+    .form-contact {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .form-contact input,
+    .form-contact textarea {
+        font-size: 14px;
+    }
+
+    .form-contact button {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .pagefooter section {
+        margin: 0 1em;
+        text-align: center;
+    }
 }

@@ -1,3 +1,4 @@
+/* Page du panier Safuan et Neemati */
 .panier {
     padding: 13rem 2rem;
     background-color: #f7f7f7;
@@ -15,9 +16,9 @@
 }
 
 .panier h1 {
-    font-size: 2rem;
+    font-size: 3em;
     margin-bottom: 2rem;
-    color: #721F3C;
+    color: #242424;
     text-align: center;
 }
 
@@ -41,13 +42,13 @@
 }
 
 .panier-tableau th {
-    background-color: #721F3C;
+    background-color: #df8620;
     color: white;
     font-weight: 600;
 }
 
 .image-produit {
-    width: 80px;
+    width: 140px;
     height: auto;
     border-radius: 8px;
 }
@@ -71,52 +72,179 @@
 }
 
 .btn-primaire {
-    background-color: #721F3C;
+    background-color: #df8620;
     color: white;
 }
 
 .btn-primaire:hover {
-    background-color: #941d4f;
+    background-color: #ba6f18;
 }
 
 .btn-secondaire {
     background-color: transparent;
-    border: 2px solid #721F3C;
-    color: #721F3C;
+    border: 2px solid #df8620;
+    color: #df8620;
 }
 
 .btn-secondaire:hover {
     background-color: #f0e0e5;
 }
 
-@media screen and (max-width: 768px) {
-    .panier-tableau thead {
-        display: none;
+/* Vue tablette */
+@media (max-width: 768px) {
+
+    section h1 {
+        font-size: 2em;
     }
 
-    .panier-tableau tr {
-        display: block;
-        margin-bottom: 1rem;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    header {
+        font-size: 1.2em;
+        padding: 0.5em 0.5em 0.5em 0em;
     }
 
+    header ul li img {
+        width: 3em;
+    }
+
+    nav ul {
+        padding: 1em;
+
+    }
+
+    nav ul li {
+        margin: 0.3em 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.4em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.5em;
+    }
+
+    .apropos {
+        text-align: center;
+    }
+    
+    .conteneur-panier {
+        padding: 1.5rem;
+    }
+
+    .panier h1 {
+        font-size: 2.2em;
+    }
+
+    .panier-tableau th,
     .panier-tableau td {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.75rem 1rem;
-        border-bottom: 1px solid #eee;
+        padding: 0.7rem;
+        font-size: 0.95rem;
     }
 
-    .panier-tableau td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        color: #721F3C;
+    .image-produit {
+        width: 100px;
     }
 
     .actions-panier {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .btn-primaire,
+    .btn-secondaire {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+/* Vue telephone */
+@media (max-width: 425px) {
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        font-size: 1em;
+        padding: 0.3em 0.3em 0.3em 0em;
+    }
+
+    header ul li img {
+        width: 2.5em;
+    }
+
+    nav ul {
+        padding: 0.5em;
+    }
+
+    nav ul li {
+        margin: 0.2em 0;
+    }
+
+    footer {
+        padding: 1.5em 0.5em;
+        gap: 0.7em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .reseaux-sociaux p {
+        font-size: 1.2em;
+    }
+
+    .reseaux-sociaux img {
+        margin: 0 0.3em;
+        width: 1.8em;
+    }
+
+    .apropos {
+        font-size: 0.9em;
+        padding: 0 1em;
+    }
+
+    .panier {
+        padding: 10rem 1rem;
+    }
+
+    .conteneur-panier {
+        padding: 1rem;
+    }
+
+    .panier h1 {
+        font-size: 1.8em;
+    }
+
+    .panier-tableau {
+        font-size: 0.85rem;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .panier-tableau th,
+    .panier-tableau td {
+        padding: 0.6rem;
+    }
+
+    .image-produit {
+        width: 80px;
+    }
+
+    .btn-primaire,
+    .btn-secondaire {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.2rem;
     }
 }

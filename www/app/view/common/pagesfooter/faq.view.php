@@ -46,7 +46,5 @@
             <p><strong>Q : L’abus d’alcool est-il dangereux ?</strong></p>
             <p>R : Oui, l’abus d’alcool est dangereux pour la santé. Nous encourageons une consommation responsable.</p>
         </section>
-        
-        <script src="../../../public/js/fonctionalites.js"></script>
     </section>
 </main>
