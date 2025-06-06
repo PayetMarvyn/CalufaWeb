@@ -2,10 +2,10 @@
     <h1>La fabrication de nos bières</h1>
 
     <section id="Introduction">
-        <p>Chez CALUFA, chaque bière est le fruit d'un trvail artisanal et acharné afin de pouvoir<br>
-            vous des bières qualitatives avec des produits de hautes qualités.<br>
+        <p>Chez CALUFA, chaque bière est le fruit d'un travail artisanal et acharné afin de pouvoir<br>
+            vous offrir des bières qualitatives avec des produits de hautes qualités.<br>
             De la sélection des ingrédients à la mise en bouteille, nous suivons des méthodes<br>
-            traditionnelles tout en y portant notre touche personnelle.<br>
+            traditionnelles tout en y apportant notre touche personnelle.<br>
         </p>
     </section>
 
@@ -14,7 +14,7 @@
 
 
 
-    <h2>Les étapes de fabrications</h2>
+    <h2>Les étapes de fabrication</h2>
     <section id="Etape">
 
 
@@ -51,7 +51,7 @@
         <div>
             <h3>La filtration</h3>
             <figure>
-                <p>Elle permet d'éliminer les particules indésirables telles que la levure, etc, qui proquent la turbidité de la bière. </p>
+                <p>Elle permet d'éliminer les particules indésirables telles que la levure, etc, qui provoquent la turbidité de la bière. </p>
                 <img src="../public/images/filtre.png">
             </figure>
         </div>
@@ -59,7 +59,7 @@
         <div>
             <h3>La clarification</h3>
             <figure>
-                <p>Elle vise à élinmine les particules solides et à améliorer la clarté de la boisson.</p>
+                <p>Elle vise à éliminer les particules solides et à améliorer la clarté de la boisson.</p>
                 <img src="../public/images/clarification.png">
             </figure>
         </div>
